@@ -707,11 +707,11 @@ summary {
 }
 
 .home-section {
-  padding: 1.25rem 0;
+  padding: 4rem 0;
 }
 
-.home-section + .home-section {
-  padding-top: 0.35rem;
+.home > .home-section:nth-child(even) {
+  background: #f8e8e6;
 }
 
 .home-wrap {
@@ -723,9 +723,21 @@ summary {
   width: min(100% - 2rem, 64rem);
   margin-inline: auto;
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
   align-items: center;
-  padding-top: 0.5rem;
+}
+
+.home-hero .stack {
+  gap: 1.25rem;
+}
+
+.home-wrap > h2 + p {
+  margin-top: 1rem;
+}
+
+.home-wrap > .stack {
+  gap: 1.15rem;
+  margin-top: 2rem;
 }
 
 .home-ctas {
@@ -737,8 +749,8 @@ summary {
 .usp-grid,
 .step-grid {
   display: grid;
-  gap: 0.75rem;
-  margin: 1rem 0 0;
+  gap: 1.5rem;
+  margin: 2.25rem 0 0;
   padding: 0;
   list-style: none;
 }
@@ -756,8 +768,8 @@ summary {
 .cta-panel {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  padding: 1.25rem;
+  gap: 1.25rem;
+  padding: 1.75rem;
   border: 1px solid #eadfd4;
   border-radius: 1.15rem;
   background: #fff;
@@ -766,8 +778,8 @@ summary {
 .cta-banner {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  padding: 1.4rem;
+  gap: 1.25rem;
+  padding: 2rem 1.5rem;
   border-radius: 1.15rem;
   background: #3a2a4a;
   color: #fffaf8;
@@ -794,18 +806,32 @@ summary {
 
 @media (min-width: 800px) {
   .home-section {
-    padding: 1.6rem 0 0.4rem;
+    padding: 6.5rem 0;
   }
 
   .home-hero {
     grid-template-columns: 1.05fr 0.95fr;
-    gap: 2rem;
-    padding-top: 1.25rem;
+    gap: 3.5rem;
+  }
+
+  .home-hero .stack {
+    gap: 1.5rem;
   }
 
   .usp-grid,
   .step-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+    margin-top: 2.75rem;
+  }
+
+  .home-wrap > .stack {
+    margin-top: 2.5rem;
+  }
+
+  .cta-panel,
+  .cta-banner {
+    padding: 2.75rem;
   }
 }
 
