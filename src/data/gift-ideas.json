@@ -24,7 +24,9 @@
       ],
       "ageGroups": [
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/wollen-sokken.svg",
+      "imageAlt": "Illustratie van twee wollen sokken"
     },
     {
       "id": "kookboek",
@@ -48,7 +50,9 @@
       ],
       "ageGroups": [
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/kookboek.svg",
+      "imageAlt": "Illustratie van een open kookboek"
     },
     {
       "id": "kinder-koptelefoon",
@@ -71,7 +75,9 @@
       "ageGroups": [
         "3-6",
         "7-12"
-      ]
+      ],
+      "image": "/cadeaus/kinder-koptelefoon.svg",
+      "imageAlt": "Illustratie van een koptelefoon voor kinderen"
     },
     {
       "id": "loopfiets",
@@ -94,7 +100,9 @@
       "ageGroups": [
         "3-6",
         "7-12"
-      ]
+      ],
+      "image": "/cadeaus/loopfiets.svg",
+      "imageAlt": "Illustratie van een houten loopfiets"
     },
     {
       "id": "knuffel",
@@ -115,7 +123,9 @@
       ],
       "ageGroups": [
         "0-2"
-      ]
+      ],
+      "image": "/cadeaus/knuffel.svg",
+      "imageAlt": "Illustratie van een zachte knuffel"
     },
     {
       "id": "hydrofiele-doeken",
@@ -136,7 +146,9 @@
       ],
       "ageGroups": [
         "0-2"
-      ]
+      ],
+      "image": "/cadeaus/hydrofiele-doeken.svg",
+      "imageAlt": "Illustratie van een stapel hydrofiele doeken"
     },
     {
       "id": "schetsset",
@@ -159,7 +171,9 @@
         "3-6",
         "7-12",
         "13-17"
-      ]
+      ],
+      "image": "/cadeaus/schetsset.svg",
+      "imageAlt": "Illustratie van een schetsboek met potloden"
     },
     {
       "id": "waterfles",
@@ -184,7 +198,9 @@
       "ageGroups": [
         "13-17",
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/waterfles.svg",
+      "imageAlt": "Illustratie van een stevige waterfles"
     },
     {
       "id": "puzzel",
@@ -210,7 +226,9 @@
       "ageGroups": [
         "13-17",
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/puzzel.svg",
+      "imageAlt": "Illustratie van een puzzelstuk"
     },
     {
       "id": "geurkaars",
@@ -233,7 +251,9 @@
       ],
       "ageGroups": [
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/geurkaars.svg",
+      "imageAlt": "Illustratie van een brandende geurkaars"
     },
     {
       "id": "bouwset",
@@ -258,7 +278,9 @@
         "3-6",
         "7-12",
         "13-17"
-      ]
+      ],
+      "image": "/cadeaus/bouwset.svg",
+      "imageAlt": "Illustratie van gekleurde bouwblokken"
     },
     {
       "id": "theedoos",
@@ -282,7 +304,9 @@
       ],
       "ageGroups": [
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/theedoos.svg",
+      "imageAlt": "Illustratie van een theekop"
     },
     {
       "id": "babyboek",
@@ -303,7 +327,9 @@
       ],
       "ageGroups": [
         "0-2"
-      ]
+      ],
+      "image": "/cadeaus/babyboek.svg",
+      "imageAlt": "Illustratie van een invulboek voor een baby"
     },
     {
       "id": "oordopjes",
@@ -325,7 +351,9 @@
       ],
       "ageGroups": [
         "13-17"
-      ]
+      ],
+      "image": "/cadeaus/oordopjes.svg",
+      "imageAlt": "Illustratie van draadloze oordopjes"
     },
     {
       "id": "tuinhandschoenen",
@@ -347,7 +375,9 @@
       ],
       "ageGroups": [
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/tuinhandschoenen.svg",
+      "imageAlt": "Illustratie van tuinhandschoenen"
     },
     {
       "id": "kinderkookset",
@@ -370,7 +400,9 @@
       "ageGroups": [
         "3-6",
         "7-12"
-      ]
+      ],
+      "image": "/cadeaus/kinderkookset.svg",
+      "imageAlt": "Illustratie van een pannetje uit een kinderkookset"
     },
     {
       "id": "sjaal",
@@ -392,7 +424,9 @@
       ],
       "ageGroups": [
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/sjaal.svg",
+      "imageAlt": "Illustratie van een wollen sjaal"
     },
     {
       "id": "nachtlampje",
@@ -417,7 +451,9 @@
         "0-2",
         "3-6",
         "7-12"
-      ]
+      ],
+      "image": "/cadeaus/nachtlampje.svg",
+      "imageAlt": "Illustratie van een zacht nachtlampje"
     },
     {
       "id": "bordspel",
@@ -445,7 +481,9 @@
         "7-12",
         "13-17",
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/bordspel.svg",
+      "imageAlt": "Illustratie van een bordspel"
     },
     {
       "id": "gastboek",
@@ -469,7 +507,9 @@
       "ageGroups": [
         "0-2",
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/gastboek.svg",
+      "imageAlt": "Illustratie van een gastboek"
     },
     {
       "id": "koptelefoon",
@@ -495,7 +535,9 @@
       "ageGroups": [
         "13-17",
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/koptelefoon.svg",
+      "imageAlt": "Illustratie van een koptelefoon"
     },
     {
       "id": "espressomachine",
@@ -518,7 +560,9 @@
       ],
       "ageGroups": [
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/espressomachine.svg",
+      "imageAlt": "Illustratie van een compacte espressomachine"
     },
     {
       "id": "kindertent",
@@ -541,7 +585,9 @@
       "ageGroups": [
         "3-6",
         "7-12"
-      ]
+      ],
+      "image": "/cadeaus/kindertent.svg",
+      "imageAlt": "Illustratie van een kindertent"
     },
     {
       "id": "fotolijst-paar",
@@ -562,7 +608,9 @@
       ],
       "ageGroups": [
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/fotolijst-paar.svg",
+      "imageAlt": "Illustratie van twee fotolijsten"
     },
     {
       "id": "dinerbon",
@@ -584,7 +632,9 @@
       ],
       "ageGroups": [
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/dinerbon.svg",
+      "imageAlt": "Illustratie van een dinerbon"
     },
     {
       "id": "glazen-set",
@@ -606,7 +656,9 @@
       ],
       "ageGroups": [
         "18+"
-      ]
+      ],
+      "image": "/cadeaus/glazen-set.svg",
+      "imageAlt": "Illustratie van twee drinkglazen"
     }
   ]
 }

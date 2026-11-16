@@ -2,8 +2,9 @@
 
 import { useMemo, useState } from "react";
 import { AddToList } from "@/components/add-to-list";
-import { GiftArt } from "@/components/gift-art";
+import { GiftPicture } from "@/components/gift-picture";
 import { OccasionIcon } from "@/components/occasion-icon";
+import { occasionImages } from "@/data/occasion-images";
 import { AGE_GROUPS, BUDGETS, INTERESTS, RECIPIENTS } from "@/data/taxonomy";
 import { filterGiftIdeas } from "@/lib/gift-filter";
 import { OCCASIONS } from "@/lib/occasions";
@@ -15,6 +16,9 @@ export type GiftCard = {
   description: string;
   priceCents: number;
   art: string;
+  image: string;
+  imageAlt: string;
+  imageUrl?: string;
   shopUrl?: string;
   shopName?: string;
   recipients: string[];
@@ -111,6 +115,14 @@ export function GiftFinder({
         ) : null}
       </section>
 
+      {occasion && occasion in occasionImages ? (
+        <GiftPicture
+          wide
+          src={occasionImages[occasion as keyof typeof occasionImages].src}
+          alt={occasionImages[occasion as keyof typeof occasionImages].alt}
+        />
+      ) : null}
+
       <p className="font-bold" data-testid="gift-count">
         {results.length === 1 ? "1 idee" : `${results.length} ideeën`}
       </p>
@@ -124,7 +136,7 @@ export function GiftFinder({
         <div className="grid gap-4 sm:grid-cols-2" data-testid="gift-results">
           {results.map((idea) => (
             <article key={idea.id} className="card flex flex-col overflow-hidden" data-testid="gift-card">
-              <GiftArt kind={idea.art} />
+              <GiftPicture src={idea.imageUrl ?? idea.image} alt={idea.imageAlt} />
               <div className="flex flex-1 flex-col gap-3 p-4">
                 <div>
                   <h2 className="text-2xl">{idea.name}</h2>

@@ -1,0 +1,5 @@
+De illustraties in deze map zijn origineel gemaakt voor hetwensenlijstje.nl.
+Het zijn geen foto's van producten en ze komen niet van een webshop.
+
+Een idee kan later een echte productfoto krijgen via het optionele veld imageUrl.
+Die foto hoort dan bij een affiliate- of shoplink en vervangt de illustratie op de kaart.

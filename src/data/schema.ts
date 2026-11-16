@@ -22,6 +22,8 @@ export const giftIdeaSchema = z.object({
   description: z.string().trim().min(1).max(280),
   priceCents: z.number().int().positive().max(99_999_900),
   art: z.enum(GIFT_ARTS),
+  image: z.string().regex(/^\/cadeaus\/[a-z0-9-]+\.svg$/),
+  imageAlt: z.string().trim().min(8).max(160),
   imageUrl: z.string().url().optional(),
   shopUrl: z.string().url().optional(),
   recipients: z.array(z.enum(recipientIds)).min(1),
