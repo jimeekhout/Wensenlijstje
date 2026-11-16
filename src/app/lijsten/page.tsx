@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Confetti } from "@/components/confetti";
 import { OccasionIcon } from "@/components/occasion-icon";
 import { getCurrentUser } from "@/lib/auth";
 import { prisma } from "@/lib/db";
@@ -29,7 +28,6 @@ export default async function ListsPage() {
     <div className="mx-auto flex w-full max-w-lg flex-col gap-4 px-4 py-6">
       <div className="flex items-end justify-between gap-3">
         <div>
-          <Confetti className="float-spark mb-1 h-10 w-16" />
           <p className="text-sm font-bold text-muted">Hoi {firstName}</p>
           <h1 className="text-4xl">Mijn lijstjes</h1>
         </div>

@@ -1,20 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { Fredoka, Nunito } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import { Header } from "@/components/header";
 import { LogoMark } from "@/components/logo-mark";
 import { Toaster } from "@/components/toaster";
 import { getCurrentUser } from "@/lib/auth";
 import "./globals.css";
 
-const nunito = Nunito({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-nunito",
-  display: "swap",
-});
-
-const fredoka = Fredoka({
-  subsets: ["latin"],
-  variable: "--font-fredoka",
+  variable: "--font-jakarta",
   display: "swap",
 });
 
@@ -37,7 +31,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#fff6ee",
+  themeColor: "#fbf7f2",
   width: "device-width",
   initialScale: 1,
 };
@@ -45,8 +39,8 @@ export const viewport: Viewport = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const user = await getCurrentUser();
   return (
-    <html lang="nl" className={`${nunito.variable} ${fredoka.variable}`}>
-      <body className={`${nunito.className} flex min-h-dvh flex-col`}>
+    <html lang="nl" className={jakarta.variable}>
+      <body className={`${jakarta.className} flex min-h-dvh flex-col`}>
         <a className="skip-link" href="#inhoud">
           Ga naar inhoud
         </a>

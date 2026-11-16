@@ -1,4 +1,3 @@
-import { Confetti } from "@/components/confetti";
 import { GiftFinder, type GiftCard } from "@/components/gift-finder";
 import { giftIdeas } from "@/data/gift-ideas";
 import { applyAffiliate } from "@/lib/affiliate";
@@ -41,7 +40,6 @@ export default async function GiftFinderPage() {
   return (
     <div className="mx-auto flex w-full max-w-5xl flex-col gap-4 px-4 py-6">
       <div className="max-w-2xl">
-        <Confetti className="float-spark h-12 w-20" />
         <h1 className="text-5xl">Cadeauzoeker</h1>
         <p className="mt-2 text-lg text-muted">
           Filter op gelegenheid, leeftijd en budget. Zet een idee daarna op een van je lijstjes.

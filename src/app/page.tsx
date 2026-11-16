@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Confetti } from "@/components/confetti";
 import { FaqList } from "@/components/faq-list";
 import { OccasionIcon } from "@/components/occasion-icon";
 import { getCurrentUser } from "@/lib/auth";
@@ -32,7 +31,6 @@ export default async function HomePage() {
   return (
     <div className="mx-auto grid w-full max-w-5xl gap-10 px-4 py-8 md:grid-cols-[1.1fr_0.9fr] md:items-center md:py-14">
       <div className="stack">
-        <Confetti className="float-spark h-14 w-24" />
         <p className="kicker">Voor sinterklaas, verjaardagen en alles daartussenin</p>
         <h1 className="text-5xl text-balance sm:text-6xl">Deel je wensen, bewaar de verrassing.</h1>
         <p className="max-w-xl text-lg leading-relaxed text-muted">
