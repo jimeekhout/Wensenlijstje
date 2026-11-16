@@ -25,10 +25,10 @@ export function resolveAppUrl(value: string | undefined, nodeEnv: string | undef
     try {
       url = new URL(configured);
     } catch {
-      throw new Error("Set APP_URL to the public site origin, for example https://wensenlijstje.nl");
+      throw new Error("Set APP_URL to the public site origin, for example https://hetwensenlijstje.nl");
     }
     if (url.protocol !== "https:" || url.username || url.password || url.origin === "null") {
-      throw new Error("APP_URL must be an https origin, for example https://wensenlijstje.nl");
+      throw new Error("APP_URL must be an https origin, for example https://hetwensenlijstje.nl");
     }
     return url.origin;
   }

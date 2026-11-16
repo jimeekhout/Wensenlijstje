@@ -18,12 +18,12 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: {
-    default: "Wensenlijstje",
-    template: "%s · Wensenlijstje",
+    default: "hetwensenlijstje.nl",
+    template: "%s · hetwensenlijstje.nl",
   },
   description:
     "Maak een wensenlijstje en deel het met familie en vrienden, zonder de verrassing te bederven.",
-  applicationName: "Wensenlijstje",
+  applicationName: "hetwensenlijstje.nl",
 };
 
 export const viewport: Viewport = {
@@ -44,7 +44,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <main id="inhoud" className="flex-1">
           {children}
         </main>
-        <footer className="site-footer">Wensenlijstje.nl · wensen delen, verrassingen bewaren</footer>
+        <footer className="site-footer">hetwensenlijstje.nl · wensen delen, verrassingen bewaren</footer>
       </body>
     </html>
   );

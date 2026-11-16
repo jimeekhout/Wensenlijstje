@@ -23,7 +23,7 @@ export async function generateMetadata({
   const label = occasionLabel(list.occasion, list.occasionCustom);
   return {
     title: list.title,
-    description: `${label}. Een wensenlijstje op Wensenlijstje.`,
+    description: `${label}. Een wensenlijstje op hetwensenlijstje.nl.`,
     robots: { index: false, follow: false },
     openGraph: {
       title: list.title,

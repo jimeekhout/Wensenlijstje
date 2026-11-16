@@ -1,4 +1,4 @@
-# Wensenlijstje.nl
+# hetwensenlijstje.nl
 
 A Dutch wish-list app. Someone makes a list for a birthday, Sinterklaas, Christmas, a baby shower or a birth, shares one link, and friends mark what they will buy. The list owner does not see those reservations.
 
@@ -78,15 +78,15 @@ The build script already runs `prisma generate`, `prisma migrate deploy` and `ne
    | `DATABASE_URL` | The pooled Neon URL. If `pgbouncer=true` is missing, append `&pgbouncer=true`. |
    | `DIRECT_URL` | The same value as `DATABASE_URL_UNPOOLED` (no `-pooler` host). Migrations use this. |
    | `AUTH_SECRET` | Output of `openssl rand -base64 32`. At least 32 characters. |
-   | `APP_URL` | Public origin, no trailing slash. Start with `https://<project>.vercel.app`, then switch to `https://wensenlijstje.nl` after the domain is connected. |
+   | `APP_URL` | Public origin, no trailing slash. Start with `https://<project>.vercel.app`, then switch to `https://hetwensenlijstje.nl` after the domain is connected. |
 
 4. Deploy. `prisma migrate deploy` creates the tables on Neon.
 
 ### Custom domain
 
-1. In the Vercel project, open **Settings → Domains** and add `wensenlijstje.nl` and `www.wensenlijstje.nl`.
+1. In the Vercel project, open **Settings → Domains** and add `hetwensenlijstje.nl` and `www.hetwensenlijstje.nl`.
 2. At the registrar, add the DNS records Vercel shows. They are usually an **A** record for the apex (`76.76.21.21`) and a **CNAME** for `www` (`cname.vercel-dns.com`). Use the values on the Domains screen if they differ.
-3. Wait until Vercel marks the domain valid, set `APP_URL` to `https://wensenlijstje.nl`, and redeploy so share links use that host.
+3. Wait until Vercel marks the domain valid, set `APP_URL` to `https://hetwensenlijstje.nl`, and redeploy so share links use that host.
 
 Sessions live in Postgres, so more than one serverless instance can share them. Cookies are marked `Secure` in production. Share links always use `APP_URL` in production, not the incoming host header.
 
