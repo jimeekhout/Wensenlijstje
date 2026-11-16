@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { existsSync } from "node:fs";
 import { test } from "node:test";
 import { getGiftIdea, giftIdeas } from "./gift-ideas";
 
@@ -9,5 +10,8 @@ test("the placeholder catalog is valid and editable by id", () => {
   for (const idea of giftIdeas) {
     assert.equal(idea.name.includes("PLACEHOLDER"), false);
     assert.ok(idea.priceCents > 0);
+    assert.ok(idea.imageAlt.length >= 8);
+    assert.equal(existsSync(`public${idea.image}`), true);
+    assert.equal(idea.imageUrl, undefined);
   }
 });

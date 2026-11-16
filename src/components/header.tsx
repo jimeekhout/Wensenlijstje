@@ -40,6 +40,11 @@ export function Header({ userName }: { userName: string | null }) {
           <MenuIcon open={open} />
         </button>
         <nav id="site-nav" className={open ? "site-nav is-open" : "site-nav"} aria-label="Hoofdmenu">
+          {userName ? (
+            <NavLink href="/lijsten" pathname={pathname}>
+              Mijn lijstjes
+            </NavLink>
+          ) : null}
           <NavLink href="/cadeauzoeker" pathname={pathname}>
             Cadeauzoeker
           </NavLink>
@@ -47,16 +52,11 @@ export function Header({ userName }: { userName: string | null }) {
             Lootjes
           </NavLink>
           {userName ? (
-            <>
-              <NavLink href="/lijsten" pathname={pathname}>
-                Mijn lijstjes
-              </NavLink>
-              <form action={logout}>
-                <button className="btn-secondary min-h-11 px-3" type="submit">
-                  Uitloggen
-                </button>
-              </form>
-            </>
+            <form action={logout}>
+              <button className="btn-secondary min-h-11 px-3" type="submit">
+                Uitloggen
+              </button>
+            </form>
           ) : (
             <>
               <NavLink href="/registreren" pathname={pathname}>

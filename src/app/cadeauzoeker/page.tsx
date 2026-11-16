@@ -28,6 +28,9 @@ export default async function GiftFinderPage() {
       description: idea.description,
       priceCents: idea.priceCents,
       art: idea.art,
+      image: idea.image,
+      imageAlt: idea.imageAlt,
+      imageUrl: idea.imageUrl,
       shopUrl,
       shopName: shopUrl ? shopLabel(shopUrl) : undefined,
       recipients: [...idea.recipients],
@@ -46,7 +49,7 @@ export default async function GiftFinderPage() {
         </p>
       </div>
       <p className="note max-w-2xl">
-        Dit is een eerste reeks voorbeeldideeën. Prijzen zijn richtprijzen en de links zoeken op een webshop, ze wijzen nog niet naar één vast product.
+        Dit is een eerste reeks voorbeeldideeën. De plaatjes zijn illustraties, geen productfoto van een webshop. Prijzen zijn richtprijzen en de links zoeken op een webshop, ze wijzen nog niet naar één vast product.
       </p>
       <GiftFinder ideas={cards} lists={lists} />
     </div>
