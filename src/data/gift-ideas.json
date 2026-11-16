@@ -1,0 +1,256 @@
+{
+  "notice": "PLACEHOLDER CATALOG. These are example gift ideas with indicative prices and shop search links, meant to be edited or replaced. Affiliate codes are not stored here.",
+  "ideas": [
+    {
+      "id": "wollen-sokken",
+      "name": "Wollen sokken",
+      "description": "Dikke sokken voor op de bank. Een klein cadeau dat bijna altijd in de smaak valt.",
+      "priceCents": 1295,
+      "art": "warm",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=wollen%20sokken",
+      "recipients": ["vrouw", "man"],
+      "occasions": ["verjaardag", "sinterklaas", "kerst", "anders"],
+      "interests": ["wellness", "mode"]
+    },
+    {
+      "id": "kookboek",
+      "name": "Kookboek voor doordeweeks",
+      "description": "Een vrolijk kookboek met gerechten voor gewone avonden, niet alleen voor feestdagen.",
+      "priceCents": 2250,
+      "art": "book",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=kookboek",
+      "recipients": ["vrouw", "man"],
+      "occasions": ["verjaardag", "kerst", "anders"],
+      "interests": ["koken", "lezen"]
+    },
+    {
+      "id": "kinder-koptelefoon",
+      "name": "Koptelefoon voor kinderen",
+      "description": "Een stevige koptelefoon met een volumebegrenzer, voor verhalen en muziek onderweg.",
+      "priceCents": 2495,
+      "art": "audio",
+      "shopUrl": "https://www.amazon.nl/s?k=kinderkoptelefoon",
+      "recipients": ["kind"],
+      "occasions": ["sinterklaas", "verjaardag"],
+      "interests": ["muziek", "techniek"]
+    },
+    {
+      "id": "loopfiets",
+      "name": "Houten loopfiets",
+      "description": "Een lage loopfiets om buiten het evenwicht te oefenen. Richtprijs voor een eenvoudig model.",
+      "priceCents": 4995,
+      "art": "outdoor",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=houten%20loopfiets",
+      "recipients": ["kind"],
+      "occasions": ["sinterklaas", "verjaardag"],
+      "interests": ["buiten", "spelen"]
+    },
+    {
+      "id": "knuffel",
+      "name": "Zachte knuffel",
+      "description": "Een wasbare knuffel om te geven bij een geboorte of babyshower.",
+      "priceCents": 1495,
+      "art": "baby",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=knuffel%20baby",
+      "recipients": ["baby"],
+      "occasions": ["geboorte", "babyshower"],
+      "interests": ["spelen"]
+    },
+    {
+      "id": "hydrofiele-doeken",
+      "name": "Set hydrofiele doeken",
+      "description": "Een stapel zachte doeken. Handig als cadeau als je de smaak van de ouders nog niet kent.",
+      "priceCents": 1795,
+      "art": "baby",
+      "shopUrl": "https://www.amazon.nl/s?k=hydrofiele+doeken",
+      "recipients": ["baby"],
+      "occasions": ["geboorte", "babyshower"],
+      "interests": ["verzorging"]
+    },
+    {
+      "id": "schetsset",
+      "name": "Schetsboek met potloden",
+      "description": "Papier en een blik kleurpotloden voor iemand die graag tekent of dat eens wil proberen.",
+      "priceCents": 1450,
+      "art": "creative",
+      "recipients": ["tiener", "kind"],
+      "occasions": ["verjaardag", "sinterklaas"],
+      "interests": ["creatief"]
+    },
+    {
+      "id": "waterfles",
+      "name": "Stevige waterfles",
+      "description": "Een fles die mee kan in een tas of op de fiets, voor sport of een dag buiten.",
+      "priceCents": 1995,
+      "art": "sport",
+      "shopUrl": "https://www.amazon.nl/s?k=waterfles+rvs",
+      "recipients": ["tiener", "man", "vrouw"],
+      "occasions": ["verjaardag", "anders"],
+      "interests": ["sport", "buiten"]
+    },
+    {
+      "id": "puzzel",
+      "name": "Puzzel van duizend stukjes",
+      "description": "Een avondvullende puzzel voor op tafel. Kies er een met een plaatje dat bij iemand past.",
+      "priceCents": 1695,
+      "art": "play",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=puzzel%201000",
+      "recipients": ["vrouw", "man", "tiener"],
+      "occasions": ["kerst", "verjaardag", "anders"],
+      "interests": ["creatief", "spelen"]
+    },
+    {
+      "id": "geurkaars",
+      "name": "Geurkaars",
+      "description": "Een kaars voor de donkere maanden. Klein genoeg om naast een ander cadeau te geven.",
+      "priceCents": 1250,
+      "art": "warm",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=geurkaars",
+      "recipients": ["vrouw", "man"],
+      "occasions": ["kerst", "verjaardag", "anders"],
+      "interests": ["wellness"]
+    },
+    {
+      "id": "bouwset",
+      "name": "Bouwset",
+      "description": "Een doos blokken of een bouwset voor een middag aan de keukentafel.",
+      "priceCents": 3495,
+      "art": "play",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=bouwset%20kinderen",
+      "recipients": ["kind", "tiener"],
+      "occasions": ["sinterklaas", "verjaardag"],
+      "interests": ["spelen", "techniek"]
+    },
+    {
+      "id": "theedoos",
+      "name": "Theeproeverij",
+      "description": "Een doos met een paar verschillende theesoorten, om cadeau te doen zonder maat te hoeven weten.",
+      "priceCents": 1895,
+      "art": "kitchen",
+      "shopUrl": "https://www.amazon.nl/s?k=thee+cadeau",
+      "recipients": ["vrouw", "man"],
+      "occasions": ["verjaardag", "kerst", "anders"],
+      "interests": ["koken", "wellness"]
+    },
+    {
+      "id": "babyboek",
+      "name": "Invulboek voor het eerste jaar",
+      "description": "Een boek waarin ouders de eerste maanden kunnen bewaren. Past bij een geboorte of babyshower.",
+      "priceCents": 1995,
+      "art": "book",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=babyboek%20eerste%20jaar",
+      "recipients": ["baby"],
+      "occasions": ["geboorte", "babyshower"],
+      "interests": ["lezen"]
+    },
+    {
+      "id": "oordopjes",
+      "name": "Draadloze oordopjes",
+      "description": "Compacte oordopjes voor muziek in de trein of tijdens het huiswerk. Richtprijs voor een eenvoudig paar.",
+      "priceCents": 2995,
+      "art": "audio",
+      "shopUrl": "https://www.amazon.nl/s?k=draadloze+oordopjes",
+      "recipients": ["tiener"],
+      "occasions": ["sinterklaas", "verjaardag"],
+      "interests": ["muziek", "techniek"]
+    },
+    {
+      "id": "tuinhandschoenen",
+      "name": "Tuinhandschoenen",
+      "description": "Een stevig paar voor iemand die graag in de tuin is. Klein, nuttig en makkelijk in te pakken.",
+      "priceCents": 1495,
+      "art": "outdoor",
+      "recipients": ["vrouw", "man"],
+      "occasions": ["verjaardag", "kerst", "anders"],
+      "interests": ["buiten"]
+    },
+    {
+      "id": "kinderkookset",
+      "name": "Kinderkookset",
+      "description": "Een veilige set met een garde en een kom, zodat een kind kan meehelpen in de keuken.",
+      "priceCents": 2495,
+      "art": "kitchen",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=kinderkookset",
+      "recipients": ["kind"],
+      "occasions": ["sinterklaas", "verjaardag"],
+      "interests": ["koken", "spelen"]
+    },
+    {
+      "id": "sjaal",
+      "name": "Wollen sjaal",
+      "description": "Een zachte sjaal voor koude dagen. Kijk even naar de kleuren die iemand vaak draagt.",
+      "priceCents": 2995,
+      "art": "warm",
+      "shopUrl": "https://www.amazon.nl/s?k=wollen+sjaal",
+      "recipients": ["vrouw", "man"],
+      "occasions": ["kerst", "sinterklaas"],
+      "interests": ["mode"]
+    },
+    {
+      "id": "nachtlampje",
+      "name": "Zacht nachtlampje",
+      "description": "Een lampje met warm licht voor op de commode of naast het bed.",
+      "priceCents": 2295,
+      "art": "baby",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=nachtlampje%20baby",
+      "recipients": ["baby", "kind"],
+      "occasions": ["geboorte", "babyshower", "sinterklaas"],
+      "interests": ["verzorging"]
+    },
+    {
+      "id": "bordspel",
+      "name": "Bordspel voor het gezin",
+      "description": "Een spel dat met kinderen én volwassenen aan tafel kan. Fijn voor een kerstavond of een regenachtige zondag.",
+      "priceCents": 2795,
+      "art": "play",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=gezelschapsspel%20gezin",
+      "recipients": ["kind", "tiener", "vrouw", "man"],
+      "occasions": ["kerst", "sinterklaas", "verjaardag"],
+      "interests": ["spelen"]
+    },
+    {
+      "id": "gastboek",
+      "name": "Gastboek voor de babyshower",
+      "description": "Een boek waarin gasten een wens of herinnering schrijven. Iets om te bewaren naast de kleertjes.",
+      "priceCents": 1695,
+      "art": "book",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=babyshower%20gastboek",
+      "recipients": ["vrouw", "baby"],
+      "occasions": ["babyshower", "geboorte"],
+      "interests": ["lezen", "creatief"]
+    },
+    {
+      "id": "koptelefoon",
+      "name": "Koptelefoon met ruisonderdrukking",
+      "description": "Een stillere treinreis of concentratie tijdens het studeren. Dit is een richtprijs voor een middenmodel.",
+      "priceCents": 12900,
+      "art": "tech",
+      "shopUrl": "https://www.amazon.nl/s?k=koptelefoon+ruisonderdrukking",
+      "recipients": ["tiener", "man", "vrouw"],
+      "occasions": ["verjaardag", "sinterklaas", "kerst"],
+      "interests": ["muziek", "techniek"]
+    },
+    {
+      "id": "espressomachine",
+      "name": "Compacte espressomachine",
+      "description": "Voor iemand die thuis echte koffie zet. De richtprijs hoort bij een klein piston- of espressomodel.",
+      "priceCents": 14900,
+      "art": "kitchen",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=espressomachine",
+      "recipients": ["vrouw", "man"],
+      "occasions": ["verjaardag", "kerst", "anders"],
+      "interests": ["koken"]
+    },
+    {
+      "id": "kindertent",
+      "name": "Tent voor in de tuin",
+      "description": "Een lichte tent of speelhuis voor in de tuin of de speelkamer.",
+      "priceCents": 7900,
+      "art": "outdoor",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=kindertent%20tuin",
+      "recipients": ["kind"],
+      "occasions": ["verjaardag", "sinterklaas"],
+      "interests": ["buiten", "spelen"]
+    }
+  ]
+}
