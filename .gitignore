@@ -1,0 +1,15 @@
+node_modules
+.next
+out
+.vercel
+*.log
+.env
+.env.local
+.env.*.local
+data/*
+!data/.gitkeep
+coverage
+test-results
+playwright-report
+tsconfig.tsbuildinfo
+*.tsbuildinfo
