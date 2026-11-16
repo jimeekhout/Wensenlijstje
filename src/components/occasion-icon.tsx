@@ -4,11 +4,6 @@ export function OccasionIcon({ name, className = "h-6 w-6" }: Props) {
   const common = {
     viewBox: "0 0 24 24",
     className,
-    fill: "none",
-    stroke: "currentColor",
-    strokeWidth: 1.8,
-    strokeLinecap: "round" as const,
-    strokeLinejoin: "round" as const,
     "aria-hidden": true,
   };
 
@@ -16,60 +11,57 @@ export function OccasionIcon({ name, className = "h-6 w-6" }: Props) {
     case "verjaardag":
       return (
         <svg {...common}>
-          <path d="M6 13h12v5a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-5Z" />
-          <path d="M6 13c.6-1.6 2-2.4 3.2-2.4 1.3 0 1.8.9 2.8.9s1.6-.9 2.8-.9c1.2 0 2.6.8 3.2 2.4" />
-          <path d="M12 10.5V7" />
-          <path d="M12 6.2c.7-.5.7-1.3 0-2" />
+          <path fill="currentColor" d="M4.5 11.2c.8-1.6 2.2-2.4 3.5-2.4 1.2 0 1.7.8 2.5.8s1.4-.8 2.6-.8 1.3.8 2.5.8 2.7-.8 3.5-2.4c.3.5.4 1.1.4 1.7V18a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-5.1c0-.6.1-1.2.4-1.7Z" />
+          <rect x="11.1" y="5.2" width="1.8" height="4.2" rx="0.9" fill="currentColor" />
+          <path fill="#FFD24D" d="M12 2.2c.9.7 1.6 1.3 1.6 2.1 0 .7-.6 1.1-1.6 1.1S10.4 5 10.4 4.3c0-.8.7-1.4 1.6-2.1Z" />
         </svg>
       );
     case "sinterklaas":
       return (
         <svg {...common}>
-          <path d="M4.5 19 8.2 6.5 12 11.5 15.8 6.5 19.5 19Z" />
-          <path d="M7.5 19h9" />
-          <path d="M12 12.2v2.6" />
-          <path d="M10.7 13.5h2.6" />
+          <path fill="currentColor" d="M12 2.4 5.2 19h13.6L12 2.4Z" />
+          <path fill="#fff" d="M12 9.2v2.2M10.6 10.3h2.8" stroke="#fff" strokeWidth="1.4" strokeLinecap="round" />
+          <path fill="#FFD24D" d="M7.2 18.2h9.6v1.8a1 1 0 0 1-1 1H8.2a1 1 0 0 1-1-1v-1.8Z" />
         </svg>
       );
     case "kerst":
       return (
         <svg {...common}>
-          <path d="M12 3 17 10h-2.2L18 16H6l3.2-6H7L12 3Z" />
-          <path d="M12 16v3" />
-          <path d="M9.5 19.5h5" />
+          <path fill="currentColor" d="M12 2.2 16.2 8h-2.1L17.6 13H6.4l3.5-5H7.8L12 2.2Z" />
+          <rect x="10.6" y="13" width="2.8" height="3.2" rx="0.4" fill="#6a4510" />
+          <circle cx="10" cy="7.2" r="0.9" fill="#FFD24D" />
+          <circle cx="13.6" cy="10.4" r="0.9" fill="#FF8FBE" />
         </svg>
       );
     case "babyshower":
       return (
         <svg {...common}>
-          <path d="M10 3h4v2h-4z" />
-          <path d="M9 5h6v2H9z" />
-          <path d="M8.5 7h7v8.5a3.5 3.5 0 0 1-7 0V7Z" />
+          <rect x="9" y="2.2" width="6" height="2.4" rx="1" fill="currentColor" />
+          <path fill="currentColor" d="M8.2 6.2h7.6v7.2a3.8 3.8 0 0 1-7.6 0V6.2Z" />
+          <rect x="8.6" y="4.6" width="6.8" height="2" rx="0.6" fill="currentColor" />
+          <circle cx="12" cy="11.2" r="1.3" fill="#fff" />
         </svg>
       );
     case "bruiloft":
       return (
         <svg {...common}>
-          <circle cx="9" cy="12" r="4" />
-          <circle cx="15" cy="12" r="4" />
+          <circle cx="9" cy="12" r="4.2" fill="none" stroke="currentColor" strokeWidth="2.4" />
+          <circle cx="15" cy="12" r="4.2" fill="none" stroke="currentColor" strokeWidth="2.4" />
+          <circle cx="12" cy="12" r="1.3" fill="#FFD24D" />
         </svg>
       );
     case "geboorte":
       return (
         <svg {...common}>
-          <path d="M4 14c1.5 3.5 14.5 3.5 16 0" />
-          <path d="M6 14V10.5" />
-          <path d="M18 14V10.5" />
-          <path d="M7 10.5h10" />
-          <path d="M12 10.5V7.5" />
-          <circle cx="12" cy="6.4" r="0.8" fill="currentColor" stroke="none" />
+          <path fill="currentColor" d="M4 15.2c1.6 3.2 14.4 3.2 16 0v-1.2H4v1.2Z" />
+          <path fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" d="M6.5 14V10.2M17.5 14V10.2M7.2 10.2h9.6M12 10.2V7.4" />
+          <circle cx="12" cy="6.1" r="1.5" fill="#FF8FBE" />
         </svg>
       );
     default:
       return (
         <svg {...common}>
-          <path d="M14 4 20 10 9 21H3v-6L14 4Z" />
-          <path d="M12 6 18 12" />
+          <path fill="currentColor" d="M12 2.4 14.2 8l6 .6-4.6 3.9 1.4 5.8L12 15.4 6.9 18.3l1.4-5.8L3.8 8.6 9.8 8 12 2.4Z" />
         </svg>
       );
   }

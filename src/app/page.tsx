@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Confetti } from "@/components/confetti";
 import { FaqList } from "@/components/faq-list";
 import { OccasionIcon } from "@/components/occasion-icon";
 import { getCurrentUser } from "@/lib/auth";
@@ -31,7 +32,8 @@ export default async function HomePage() {
   return (
     <div className="mx-auto grid w-full max-w-5xl gap-10 px-4 py-8 md:grid-cols-[1.1fr_0.9fr] md:items-center md:py-14">
       <div className="stack">
-        <p className="text-sm font-extrabold tracking-[0.14em] text-clay uppercase">Voor sinterklaas, verjaardagen en alles daartussenin</p>
+        <Confetti className="float-spark h-14 w-24" />
+        <p className="kicker">Voor sinterklaas, verjaardagen en alles daartussenin</p>
         <h1 className="text-5xl text-balance sm:text-6xl">Deel je wensen, bewaar de verrassing.</h1>
         <p className="max-w-xl text-lg leading-relaxed text-muted">
           Eén link voor familie en vrienden. Zij strepen af wat ze kopen. Jij ziet dat niet, zodat het een verrassing blijft.
@@ -89,8 +91,8 @@ export default async function HomePage() {
         <div className="grid gap-3 md:grid-cols-3">
           {steps.map((step, index) => (
             <article key={step.title} className="card p-4">
-              <p className="text-sm font-extrabold text-clay">0{index + 1}</p>
-              <h3 className="mt-1 text-2xl">{step.title}</h3>
+              <p className="step-index">{index + 1}</p>
+              <h3 className="mt-2 text-2xl">{step.title}</h3>
               <p className="mt-1 text-sm leading-relaxed text-muted">{step.text}</p>
             </article>
           ))}

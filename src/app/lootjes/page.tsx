@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Confetti } from "@/components/confetti";
 import { getCurrentUser } from "@/lib/auth";
 import { prisma } from "@/lib/db";
 import { formatDutchDate } from "@/lib/format";
@@ -25,6 +26,7 @@ export default async function DrawsPage() {
     <div className="mx-auto flex w-full max-w-lg flex-col gap-4 px-4 py-6">
       <div className="flex items-end justify-between gap-3">
         <div>
+          <Confetti className="float-spark mb-1 h-10 w-16" />
           <h1 className="text-4xl">Lootjes trekken</h1>
           <p className="mt-1 text-muted">Voor Sinterklaas of Kerst. Jij ziet niet wie wie trekt.</p>
         </div>
