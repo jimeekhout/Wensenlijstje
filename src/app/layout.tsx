@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Link from "next/link";
 import { Header } from "@/components/header";
 import { LogoMark } from "@/components/logo-mark";
 import { Toaster } from "@/components/toaster";
@@ -50,7 +51,14 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         </main>
         <footer className="site-footer">
           <LogoMark className="footer-mark" />
-          <p>hetwensenlijstje.nl · wensen delen, verrassingen bewaren</p>
+          <p className="font-bold text-ink">hetwensenlijstje.nl</p>
+          <nav className="footer-nav" aria-label="Voettekst">
+            <Link href="/">Home</Link>
+            <Link href="/cadeauzoeker">Cadeauzoeker</Link>
+            <Link href="/lootjes">Lootjes</Link>
+            {user ? <Link href="/lijsten">Mijn lijstjes</Link> : <Link href="/inloggen">Inloggen</Link>}
+          </nav>
+          <p>Wensen delen, verrassingen bewaren.</p>
         </footer>
         <Toaster />
       </body>
