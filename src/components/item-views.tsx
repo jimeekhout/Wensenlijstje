@@ -1,6 +1,5 @@
-import { deleteItem } from "@/app/actions/items";
 import { ClaimForm, UnclaimForm } from "@/components/claim-controls";
-import { DangerConfirm } from "@/components/danger-confirm";
+import { DeleteItemButton } from "@/components/delete-item-button";
 import { ItemForm } from "@/components/item-form";
 import { RemoteImage } from "@/components/remote-image";
 import { priorityLabel } from "@/lib/format";
@@ -65,12 +64,7 @@ export function OwnerItem({ item, listId }: { item: ItemFields; listId: string }
             />
           </div>
         </details>
-        <DangerConfirm
-          action={deleteItem}
-          label="Verwijderen"
-          confirmLabel="Ja, verwijder dit cadeau"
-          hidden={<input type="hidden" name="itemId" value={item.id} />}
-        />
+        <DeleteItemButton itemId={item.id} />
       </div>
     </article>
   );

@@ -5,6 +5,7 @@ import { createItem, updateItem } from "@/app/actions/items";
 import { previewProduct } from "@/app/actions/product";
 import { RemoteImage } from "@/components/remote-image";
 import { SubmitButton } from "@/components/submit-button";
+import { showToast } from "@/components/toaster";
 import { initialActionState } from "@/lib/action-state";
 
 type Initial = {
@@ -40,12 +41,20 @@ export function ItemForm({
   const [fields, setFields] = useState<Initial>(initial ?? empty);
   const [previewing, setPreviewing] = useState(false);
   const [previewMessage, setPreviewMessage] = useState("");
+  const [moreOpen, setMoreOpen] = useState(
+    Boolean(initial?.description || initial?.price || initial?.imageUrl || initial?.priority),
+  );
   const formId = useId();
 
   useEffect(() => {
     if (mode === "create" && state.ok && state.nonce) {
       setFields(empty);
-      setPreviewMessage("Cadeau toegevoegd.");
+      setMoreOpen(false);
+      setPreviewMessage("");
+      showToast("Cadeau toegevoegd.");
+    }
+    if (mode === "edit" && state.ok && state.nonce) {
+      showToast("Cadeau opgeslagen.");
     }
   }, [mode, state.nonce, state.ok]);
 
@@ -75,6 +84,7 @@ export function ItemForm({
         imageUrl: result.imageUrl || current.imageUrl,
         price: result.price || current.price,
       }));
+      if (result.description || result.price || result.imageUrl) setMoreOpen(true);
       setPreviewMessage(result.message);
     } catch {
       setPreviewMessage("Ophalen is niet gelukt. De link kun je wel opslaan en de rest zelf invullen.");
@@ -146,10 +156,20 @@ export function ItemForm({
           value={fields.name}
           data-testid={mode === "create" ? "item-name" : undefined}
           autoComplete="off"
-          onChange={(event) => set("name", event.target.value)}
+          onChange={(event) => {
+            event.currentTarget.setCustomValidity("");
+            set("name", event.target.value);
+          }}
+          onInvalid={(event) => event.currentTarget.setCustomValidity("Geef het cadeau een naam.")}
         />
       </div>
 
+      <details
+        open={moreOpen}
+        onToggle={(event) => setMoreOpen(event.currentTarget.open)}
+      >
+        <summary>Meer opties</summary>
+        <div className="stack pt-3">
       <div>
         <label className="label" htmlFor={`${formId}-description`}>
           Omschrijving <span className="font-medium text-muted">(optioneel)</span>
@@ -221,6 +241,8 @@ export function ItemForm({
           </div>
         ) : null}
       </div>
+        </div>
+      </details>
 
       <SubmitButton>{mode === "create" ? "Cadeau toevoegen" : "Cadeau opslaan"}</SubmitButton>
     </form>

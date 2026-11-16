@@ -21,7 +21,11 @@ async function guestPage(browser: Browser) {
 async function addForm(page: Page) {
   const form = page.locator("details").filter({ has: page.locator("summary", { hasText: "Cadeau toevoegen" }) });
   if (!(await form.getByTestId("item-name").isVisible())) {
-    await form.locator("summary").click();
+    await form.locator("summary").first().click();
+  }
+  const extra = form.locator("details").filter({ has: page.locator("summary", { hasText: "Meer opties" }) });
+  if ((await extra.count()) > 0 && !(await extra.getByLabel(/^Prijs/).isVisible())) {
+    await extra.locator("summary").click();
   }
   return form;
 }
@@ -89,7 +93,7 @@ test("signup, list, claim privacy, shop prefill and cadeauzoeker", async ({ page
   await expect(viewer.page.getByText("Gereserveerd door Oma Ineke")).toBeVisible();
   await expect(viewer.page.getByRole("heading", { name: "Houten treinset" })).toBeVisible();
 
-  await page.goto(shareUrl);
+  await page.goto(new URL(shareUrl).pathname);
   await expect(page.getByText("Dit is jouw lijstje")).toBeVisible();
   expect(await page.content()).not.toContain("Oma Ineke");
 
@@ -107,8 +111,8 @@ test("signup, list, claim privacy, shop prefill and cadeauzoeker", async ({ page
   await viewer.page.reload();
   await expect(viewer.page.getByText("Gereserveerd door Oma Ineke")).toBeVisible();
 
-  await page.screenshot({ path: "/opt/cursor/artifacts/owner_list_view.png", fullPage: true });
-  await viewer.page.screenshot({ path: "/opt/cursor/artifacts/shared_list_claimed.png", fullPage: true });
+  await page.screenshot({ path: "/tmp/owner_list_view.png", fullPage: true });
+  await viewer.page.screenshot({ path: "/tmp/shared_list_claimed.png", fullPage: true });
 
   await page.goto("/cadeauzoeker");
   await page.getByRole("button", { name: "Baby", exact: true }).click();
@@ -117,7 +121,7 @@ test("signup, list, claim privacy, shop prefill and cadeauzoeker", async ({ page
   const knuffel = page.locator("article", { hasText: "Zachte knuffel" });
   await knuffel.getByRole("button", { name: "Toevoegen aan mijn lijstje" }).click();
   await expect(knuffel.getByText(/Staat nu op Sinterklaas voor Noor/)).toBeVisible();
-  await page.screenshot({ path: "/opt/cursor/artifacts/cadeauzoeker.png", fullPage: true });
+  await page.screenshot({ path: "/tmp/cadeauzoeker.png", fullPage: true });
 
   await page.goto("/lijsten/nieuw");
   await page.getByLabel("Naam van het lijstje").fill("Housewarming bij Noor");

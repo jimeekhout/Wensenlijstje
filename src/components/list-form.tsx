@@ -62,6 +62,8 @@ export function ListForm({
           defaultValue={initial?.title ?? ""}
           placeholder="Bijvoorbeeld: Sinterklaas voor Noor"
           autoComplete="off"
+          onInput={(event) => event.currentTarget.setCustomValidity("")}
+          onInvalid={(event) => event.currentTarget.setCustomValidity("Geef het lijstje een naam.")}
         />
       </div>
 

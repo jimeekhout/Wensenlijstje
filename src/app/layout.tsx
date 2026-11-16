@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Figtree, Fraunces } from "next/font/google";
 import { Header } from "@/components/header";
+import { Toaster } from "@/components/toaster";
 import { getCurrentUser } from "@/lib/auth";
 import "./globals.css";
 
@@ -45,6 +46,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           {children}
         </main>
         <footer className="site-footer">hetwensenlijstje.nl · wensen delen, verrassingen bewaren</footer>
+        <Toaster />
       </body>
     </html>
   );
