@@ -113,30 +113,24 @@ a {
   color: #d4a017;
 }
 
-.logo-dotted {
+.logo-starlet {
   position: relative;
   display: inline-block;
 }
 
-.logo-dotted::before {
-  content: "";
-  position: absolute;
-  left: 20%;
-  right: 20%;
-  top: 0;
-  height: 0.28em;
-  background: #fbf7f2;
-  z-index: 1;
+.logo-glyph {
+  display: inline-block;
+  clip-path: inset(0.4em 0 0 0);
 }
 
 .logo-istar {
   position: absolute;
-  left: 50%;
-  top: 0;
-  z-index: 2;
-  width: 0.32em;
-  height: 0.32em;
-  transform: translateX(-50%);
+  left: var(--star-x);
+  top: 0.2799em;
+  width: 0.2em;
+  height: 0.2em;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 .brand-logo-compact .logo-mark {
