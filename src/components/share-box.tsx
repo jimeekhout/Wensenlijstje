@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { showToast } from "@/components/toaster";
 
 export function ShareBox({ url, title }: { url: string; title: string }) {
-  const [copied, setCopied] = useState(false);
   const [canShare, setCanShare] = useState(false);
+  const whatsapp = `https://wa.me/?text=${encodeURIComponent(`${title}\n${url}`)}`;
 
   useEffect(() => {
     setCanShare(typeof navigator.share === "function");
@@ -13,9 +14,9 @@ export function ShareBox({ url, title }: { url: string; title: string }) {
   async function copy() {
     try {
       await navigator.clipboard.writeText(url);
-      setCopied(true);
+      showToast("Link gekopieerd.");
     } catch {
-      setCopied(false);
+      showToast("Selecteer de link en kopieer hem zelf.");
     }
   }
 
@@ -43,13 +44,16 @@ export function ShareBox({ url, title }: { url: string; title: string }) {
         data-testid="share-url"
         onFocus={(event) => event.currentTarget.select()}
       />
-      <div className="flex flex-wrap gap-2">
+      <div className="grid grid-cols-2 gap-2">
         <button className="btn" type="button" onClick={copy}>
-          {copied ? "Gekopieerd" : "Kopieer link"}
+          Kopieer link
         </button>
+        <a className="btn-secondary" href={whatsapp} target="_blank" rel="noopener noreferrer">
+          WhatsApp
+        </a>
         {canShare ? (
-          <button className="btn-secondary" type="button" onClick={share}>
-            Deel…
+          <button className="btn-ghost col-span-2" type="button" onClick={share}>
+            Deel via je telefoon…
           </button>
         ) : null}
       </div>

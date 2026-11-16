@@ -34,9 +34,12 @@ export default async function OwnerListPage({ params }: { params: Promise<{ id: 
     <div className="mx-auto flex w-full max-w-lg flex-col gap-4 px-4 py-6" data-testid="owner-list">
       <OccasionBanner occasion={list.occasion} custom={list.occasionCustom} title={list.title} detail={detail} />
       <ShareBox url={`${origin}/delen/${list.shareToken}`} title={list.title} />
-      <p className="note">
-        Mensen met de link kunnen een cadeau afstrepen. Dat blijft voor jou verborgen, zodat het een verrassing blijft. Blijf daarvoor ingelogd.
-      </p>
+      <aside className="note">
+        <p className="font-extrabold">Dit blijft een verrassing.</p>
+        <p className="mt-1">
+          Bezoekers kunnen een cadeau afstrepen, zodat niet twee mensen hetzelfde kopen. Jij ziet die afstrepingen niet, zolang je bent ingelogd.
+        </p>
+      </aside>
       {list.items.length === 0 ? (
         <p className="hint">Nog geen cadeaus. Voeg er hieronder een toe.</p>
       ) : (

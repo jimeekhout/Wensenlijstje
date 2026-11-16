@@ -27,7 +27,16 @@ export function LoginForm({ next }: { next: string }) {
         <label className="label" htmlFor="password">
           Wachtwoord
         </label>
-        <input id="password" className="input" name="password" type="password" autoComplete="current-password" required />
+        <input
+          id="password"
+          className="input"
+          name="password"
+          type="password"
+          autoComplete="current-password"
+          required
+          onInput={(event) => event.currentTarget.setCustomValidity("")}
+          onInvalid={(event) => event.currentTarget.setCustomValidity("Vul je wachtwoord in.")}
+        />
       </div>
       <SubmitButton>Inloggen</SubmitButton>
       <p className="hint">
@@ -64,7 +73,21 @@ export function SignupForm({ next }: { next: string }) {
         <label className="label" htmlFor="password">
           Wachtwoord
         </label>
-        <input id="password" className="input" name="password" type="password" autoComplete="new-password" required minLength={8} />
+        <input
+          id="password"
+          className="input"
+          name="password"
+          type="password"
+          autoComplete="new-password"
+          required
+          minLength={8}
+          onInput={(event) => event.currentTarget.setCustomValidity("")}
+          onInvalid={(event) =>
+            event.currentTarget.setCustomValidity(
+              event.currentTarget.validity.valueMissing ? "Kies een wachtwoord." : "Kies minstens 8 tekens.",
+            )
+          }
+        />
         <p className="hint">Minstens 8 tekens.</p>
       </div>
       <div>

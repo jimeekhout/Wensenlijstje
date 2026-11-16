@@ -30,20 +30,20 @@ export default async function HomePage() {
         <p className="text-sm font-extrabold tracking-[0.14em] text-clay uppercase">Voor sinterklaas, verjaardagen en alles daartussenin</p>
         <h1 className="text-5xl text-balance sm:text-6xl">Deel je wensen, bewaar de verrassing.</h1>
         <p className="max-w-xl text-lg leading-relaxed text-muted">
-          Maak een lijstje, stuur één link naar familie en vrienden, en laat hen afstrepen wat zij kopen. Jij ziet dat niet.
+          Eén link voor familie en vrienden. Zij strepen af wat ze kopen. Jij ziet dat niet, zodat het een verrassing blijft.
         </p>
-        <div className="flex flex-wrap gap-2">
+        <div className="stack sm:max-w-xs">
           {user ? (
             <Link className="btn" href="/lijsten">
               Naar mijn lijstjes
             </Link>
           ) : (
             <Link className="btn" href="/registreren">
-              Maak een lijstje
+              Maak je eerste lijstje
             </Link>
           )}
-          <Link className="btn-secondary" href="/cadeauzoeker">
-            Zoek een cadeau
+          <Link className="text-center font-bold underline" href="/cadeauzoeker">
+            Of zoek eerst een cadeau-idee
           </Link>
         </div>
         <ul className="mt-2 flex flex-wrap gap-2" aria-label="Gelegenheden">

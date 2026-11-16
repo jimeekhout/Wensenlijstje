@@ -67,7 +67,10 @@ export default async function SharePage({ params }: { params: Promise<{ token: s
           </Link>
         </p>
       ) : (
-        <p className="hint">De maker van dit lijstje ziet niet wat je afstreept.</p>
+        <aside className="note">
+          <p className="font-extrabold">Jij ziet wat al gekozen is.</p>
+          <p className="mt-1">De maker van dit lijstje ziet dat niet. Zo blijft het een verrassing.</p>
+        </aside>
       )}
       {items.length === 0 ? (
         <p className="card p-4">Er staan nog geen cadeaus op dit lijstje.</p>
