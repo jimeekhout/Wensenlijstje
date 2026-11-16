@@ -65,6 +65,27 @@ Stored links stay clean. When a link is shown, `src/lib/affiliate.ts` can add a 
 
 Leave both empty in development. Other shops are unchanged. Set the variables in the Vercel project when you have partner ids; existing list items pick them up without a rewrite.
 
+## Inloggen met Google
+
+The login and registration pages show **Doorgaan met Google** only when both `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` are set. Without them, email and password keep working and the button stays hidden.
+
+A first visit with Google creates an account. If that Google account’s email is verified and already belongs to a password account, the Google login is linked to it. An unverified Google email is refused, and an email already linked to a different Google account is not taken over.
+
+### Google Cloud Console
+
+1. Open [Google Cloud Console](https://console.cloud.google.com/) and create or select a project.
+2. Go to **APIs & Services → OAuth consent screen**. Choose **External**, set the app name to `hetwensenlijstje.nl`, and add your contact email. The scopes `openid`, `email` and `profile` are enough. While the app is in **Testing**, add the Google accounts that may sign in. Publish the app when anyone should be able to use it.
+3. Go to **APIs & Services → Credentials → Create credentials → OAuth client ID**. Choose **Web application**.
+4. Under **Authorized JavaScript origins**, add:
+   - `http://localhost:3000`
+   - `https://hetwensenlijstje.vercel.app`
+5. Under **Authorized redirect URIs**, add exactly:
+   - `http://localhost:3000/api/auth/google/callback`
+   - `https://hetwensenlijstje.vercel.app/api/auth/google/callback`
+6. Copy the client id and secret into `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` locally and in the Vercel project (Production, available at runtime). Redeploy.
+
+The redirect URI the app sends is `APP_URL` plus `/api/auth/google/callback`. On the live site, `APP_URL` must be `https://hetwensenlijstje.vercel.app` with no trailing slash. If you later point `APP_URL` at `https://hetwensenlijstje.nl`, also register `https://hetwensenlijstje.nl/api/auth/google/callback`.
+
 ## Deploying on Vercel
 
 The build script already runs `prisma generate`, `prisma migrate deploy` and `next build`. Leave Vercel’s build command as the default (`npm run build`). Environment variables must be available at build time, not marked runtime-only, because migrations run during the build.
@@ -78,7 +99,9 @@ The build script already runs `prisma generate`, `prisma migrate deploy` and `ne
    | `DATABASE_URL` | The pooled Neon URL. If `pgbouncer=true` is missing, append `&pgbouncer=true`. |
    | `DIRECT_URL` | The same value as `DATABASE_URL_UNPOOLED` (no `-pooler` host). Migrations use this. |
    | `AUTH_SECRET` | Output of `openssl rand -base64 32`. At least 32 characters. |
-   | `APP_URL` | Public origin, no trailing slash. Start with `https://<project>.vercel.app`, then switch to `https://hetwensenlijstje.nl` after the domain is connected. |
+   | `APP_URL` | Public origin, no trailing slash. On the live site this is `https://hetwensenlijstje.vercel.app`. After the custom domain works, switch it to `https://hetwensenlijstje.nl` and add that origin’s Google redirect URI. |
+   | `GOOGLE_CLIENT_ID` | Optional. From the Google OAuth web client. |
+   | `GOOGLE_CLIENT_SECRET` | Optional. Required together with the client id, or the Google button stays hidden. |
 
 4. Deploy. `prisma migrate deploy` creates the tables on Neon.
 

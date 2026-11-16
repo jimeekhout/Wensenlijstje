@@ -73,7 +73,8 @@ a {
 .btn,
 .btn-secondary,
 .btn-ghost,
-.btn-danger {
+.btn-danger,
+.btn-google {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -127,10 +128,22 @@ a {
   cursor: progress;
 }
 
+.btn-google {
+  width: 100%;
+  background: #fffdf9;
+  border-color: #d9cbb8;
+  color: #2a2118;
+}
+
+.btn-google:hover {
+  background: #fff7ee;
+}
+
 .btn:focus-visible,
 .btn-secondary:focus-visible,
 .btn-ghost:focus-visible,
 .btn-danger:focus-visible,
+.btn-google:focus-visible,
 a:focus-visible,
 summary:focus-visible,
 .chip:focus-visible {
@@ -213,6 +226,23 @@ summary:focus-visible,
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
+}
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #6f6256;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: #e4d7c6;
 }
 
 .occasion-verjaardag { --occ-bg: #f8e1d7; --occ-accent: #c4513a; --occ-ink: #6e2e22; }

@@ -1,13 +1,14 @@
 import { redirect } from "next/navigation";
 import { LoginForm } from "@/components/auth-forms";
 import { getCurrentUser, safeNextPath } from "@/lib/auth";
+import { googleAuthConfigured, googleErrorMessage } from "@/lib/google";
 
 export const metadata = { title: "Inloggen" };
 
 export default async function LoginPage({
   searchParams,
 }: {
-  searchParams: Promise<{ next?: string }>;
+  searchParams: Promise<{ next?: string; fout?: string }>;
 }) {
   const params = await searchParams;
   const next = safeNextPath(params.next);
@@ -15,7 +16,7 @@ export default async function LoginPage({
   if (user) redirect(next);
   return (
     <div className="mx-auto w-full max-w-lg px-4 py-8">
-      <LoginForm next={next} />
+      <LoginForm next={next} googleEnabled={googleAuthConfigured()} alert={googleErrorMessage(params.fout)} />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { SignupForm } from "@/components/auth-forms";
 import { getCurrentUser, safeNextPath } from "@/lib/auth";
+import { googleAuthConfigured } from "@/lib/google";
 
 export const metadata = { title: "Account maken" };
 
@@ -15,7 +16,7 @@ export default async function SignupPage({
   if (user) redirect(next);
   return (
     <div className="mx-auto w-full max-w-lg px-4 py-8">
-      <SignupForm next={next} />
+      <SignupForm next={next} googleEnabled={googleAuthConfigured()} />
     </div>
   );
 }
