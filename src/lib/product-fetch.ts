@@ -8,7 +8,7 @@ import { addressIsBlocked, checkPublicUrl } from "@/lib/urls";
 
 const MAX_BYTES = 2_500_000;
 const MAX_REDIRECTS = 3;
-const USER_AGENT = "Mozilla/5.0 (compatible; Wensenlijstje/1.0; +https://wensenlijstje.nl)";
+const USER_AGENT = "Mozilla/5.0 (compatible; hetwensenlijstje.nl/1.0; +https://hetwensenlijstje.nl)";
 
 export class ProductFetchError extends Error {
   code: "BAD_URL" | "PRIVATE_URL" | "TIMEOUT" | "NOT_HTML" | "HTTP" | "TOO_LARGE" | "TOO_MANY_REDIRECTS" | "NETWORK";

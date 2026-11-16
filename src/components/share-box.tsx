@@ -21,7 +21,7 @@ export function ShareBox({ url, title }: { url: string; title: string }) {
 
   async function share() {
     try {
-      await navigator.share({ title, text: "Mijn wensenlijstje", url });
+      await navigator.share({ title, text: "Mijn wensenlijstje op hetwensenlijstje.nl", url });
     } catch {
       // The visitor closed the share sheet.
     }

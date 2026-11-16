@@ -13,7 +13,7 @@ export function Header({ userName }: { userName: string | null }) {
               <path d="M8 14h6M8 17h3" strokeLinecap="round" />
             </svg>
           </span>
-          <span className="font-serif text-xl tracking-tight">Wensenlijstje</span>
+          <span className="font-serif text-lg leading-none tracking-tight sm:text-xl">hetwensenlijstje.nl</span>
         </Link>
         <nav className="flex flex-wrap items-center gap-2 text-sm font-bold">
           <Link href="/cadeauzoeker" className="btn-ghost min-h-11 px-3">

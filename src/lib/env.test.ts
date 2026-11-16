@@ -8,7 +8,7 @@ test("production requires a real auth secret and https app url", () => {
   assert.equal(resolveAuthSecret("a".repeat(32), "production"), "a".repeat(32));
 
   assert.throws(() => resolveAppUrl("http://localhost:3000", "production"));
-  assert.equal(resolveAppUrl("https://wensenlijstje.nl/", "production"), "https://wensenlijstje.nl");
+  assert.equal(resolveAppUrl("https://hetwensenlijstje.nl/", "production"), "https://hetwensenlijstje.nl");
 });
 
 test("development can run without production secrets", () => {
