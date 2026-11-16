@@ -35,6 +35,14 @@ export const INTERESTS = [
   { id: "verzorging", label: "Verzorging" },
 ] as const;
 
+export const AGE_GROUPS = [
+  { id: "0-2", label: "0–2 jaar" },
+  { id: "3-6", label: "3–6 jaar" },
+  { id: "7-12", label: "7–12 jaar" },
+  { id: "13-17", label: "13–17 jaar" },
+  { id: "18+", label: "18+" },
+] as const;
+
 export const BUDGETS = [
   { id: "all", label: "Alle prijzen", min: 0, max: Number.POSITIVE_INFINITY },
   { id: "t15", label: "Tot € 15", min: 0, max: 1500 },

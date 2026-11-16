@@ -1,24 +1,28 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { FaqList } from "@/components/faq-list";
 import { OccasionIcon } from "@/components/occasion-icon";
 import { getCurrentUser } from "@/lib/auth";
 import { OCCASIONS } from "@/lib/occasions";
 
+export const metadata: Metadata = {
+  title: { absolute: "hetwensenlijstje.nl — deel een wensenlijstje, bewaar de verrassing" },
+  description:
+    "Maak een gratis wensenlijstje voor Sinterklaas, Kerst, een verjaardag of een bruiloft. Deel één link. Gasten hebben geen account nodig en jij ziet niet wat ze afstrepen.",
+};
+
 const steps = [
   {
-    title: "Kies de gelegenheid",
-    text: "Verjaardag, Sinterklaas, Kerst, een babyshower, een geboorte of iets van jezelf.",
+    title: "Maak je lijstje",
+    text: "Kies de gelegenheid en zet er cadeaus op. Een link van een webshop vult naam en prijs vaak al in.",
   },
   {
-    title: "Voeg cadeaus toe",
-    text: "Typ ze zelf, of plak een link van een webshop. We vullen naam, prijs en foto in als de pagina dat deelt.",
+    title: "Deel één link",
+    text: "Via WhatsApp, een QR-code of kopiëren. Wie kijkt, heeft geen account nodig.",
   },
   {
-    title: "Stuur één link",
-    text: "Wie het lijstje bekijkt, heeft geen account nodig.",
-  },
-  {
-    title: "Zij kopen, jij weet van niks",
-    text: "Wie iets reserveert, zet er een naam bij. Op jouw scherm blijft dat verborgen.",
+    title: "Zij kopen, jij blijft verrast",
+    text: "Gasten strepen af wat ze kopen. Op jouw scherm blijft dat verborgen.",
   },
 ];
 
@@ -80,15 +84,21 @@ export default async function HomePage() {
         </div>
       </aside>
 
-      <section className="grid gap-3 sm:grid-cols-2 md:col-span-2">
-        {steps.map((step, index) => (
-          <article key={step.title} className="card p-4">
-            <p className="text-sm font-extrabold text-clay">0{index + 1}</p>
-            <h2 className="mt-1 text-2xl">{step.title}</h2>
-            <p className="mt-1 text-sm leading-relaxed text-muted">{step.text}</p>
-          </article>
-        ))}
+      <section className="stack md:col-span-2" aria-labelledby="stappen-title">
+        <h2 id="stappen-title" className="text-3xl">Zo werkt het in 3 stappen</h2>
+        <div className="grid gap-3 md:grid-cols-3">
+          {steps.map((step, index) => (
+            <article key={step.title} className="card p-4">
+              <p className="text-sm font-extrabold text-clay">0{index + 1}</p>
+              <h3 className="mt-1 text-2xl">{step.title}</h3>
+              <p className="mt-1 text-sm leading-relaxed text-muted">{step.text}</p>
+            </article>
+          ))}
+        </div>
       </section>
+      <div className="md:col-span-2">
+        <FaqList />
+      </div>
     </div>
   );
 }

@@ -250,6 +250,7 @@ summary:focus-visible,
 .occasion-kerst { --occ-bg: #dce8e1; --occ-accent: #1f6b45; --occ-ink: #143d28; }
 .occasion-babyshower { --occ-bg: #f8e4ea; --occ-accent: #c45b7a; --occ-ink: #6e3144; }
 .occasion-geboorte { --occ-bg: #dce8f4; --occ-accent: #2f6796; --occ-ink: #1a3a56; }
+.occasion-bruiloft { --occ-bg: #f8ead8; --occ-accent: #a56b2b; --occ-ink: #5c3b12; }
 .occasion-anders { --occ-bg: #efe6d6; --occ-accent: #8a5a2b; --occ-ink: #4a341c; }
 
 .occasion-banner {

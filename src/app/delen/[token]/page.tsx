@@ -4,7 +4,10 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PublicItem } from "@/components/item-views";
 import { OccasionBanner } from "@/components/occasion-banner";
+import { PasswordGate } from "@/components/password-gate";
+import { listIsUnlocked } from "@/app/actions/access";
 import { claimCookieName, getCurrentUser } from "@/lib/auth";
+import { prisma } from "@/lib/db";
 import { cadeauCount, formatDutchDate } from "@/lib/format";
 import { occasionLabel } from "@/lib/occasions";
 import { getClaimsForItems, getSharedList } from "@/lib/queries";
@@ -34,6 +37,14 @@ export async function generateMetadata({
 
 export default async function SharePage({ params }: { params: Promise<{ token: string }> }) {
   const { token } = await params;
+  const gate = await prisma.wishList.findUnique({
+    where: { shareToken: token },
+    select: { title: true, accessHash: true },
+  });
+  if (!gate) notFound();
+  if (gate.accessHash && !(await listIsUnlocked(token, gate.accessHash))) {
+    return <PasswordGate shareToken={token} title={gate.title} />;
+  }
   const list = await getSharedList(token);
   if (!list) notFound();
 

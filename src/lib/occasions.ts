@@ -4,6 +4,7 @@ export const OCCASION_IDS = [
   "kerst",
   "babyshower",
   "geboorte",
+  "bruiloft",
   "anders",
 ] as const;
 
@@ -21,6 +22,7 @@ export const OCCASIONS: Occasion[] = [
   { id: "kerst", label: "Kerst", hint: "Onder de boom" },
   { id: "babyshower", label: "Babyshower", hint: "Voor de aanstaande ouder" },
   { id: "geboorte", label: "Geboorte", hint: "Welkom, kleine" },
+  { id: "bruiloft", label: "Bruiloft", hint: "Voor het paar" },
   { id: "anders", label: "Anders", hint: "Een eigen gelegenheid" },
 ];
 

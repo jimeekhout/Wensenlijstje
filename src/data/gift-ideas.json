@@ -8,9 +8,23 @@
       "priceCents": 1295,
       "art": "warm",
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=wollen%20sokken",
-      "recipients": ["vrouw", "man"],
-      "occasions": ["verjaardag", "sinterklaas", "kerst", "anders"],
-      "interests": ["wellness", "mode"]
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas",
+        "kerst",
+        "anders"
+      ],
+      "interests": [
+        "wellness",
+        "mode"
+      ],
+      "ageGroups": [
+        "18+"
+      ]
     },
     {
       "id": "kookboek",
@@ -19,9 +33,22 @@
       "priceCents": 2250,
       "art": "book",
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=kookboek",
-      "recipients": ["vrouw", "man"],
-      "occasions": ["verjaardag", "kerst", "anders"],
-      "interests": ["koken", "lezen"]
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst",
+        "anders"
+      ],
+      "interests": [
+        "koken",
+        "lezen"
+      ],
+      "ageGroups": [
+        "18+"
+      ]
     },
     {
       "id": "kinder-koptelefoon",
@@ -30,9 +57,21 @@
       "priceCents": 2495,
       "art": "audio",
       "shopUrl": "https://www.amazon.nl/s?k=kinderkoptelefoon",
-      "recipients": ["kind"],
-      "occasions": ["sinterklaas", "verjaardag"],
-      "interests": ["muziek", "techniek"]
+      "recipients": [
+        "kind"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "muziek",
+        "techniek"
+      ],
+      "ageGroups": [
+        "3-6",
+        "7-12"
+      ]
     },
     {
       "id": "loopfiets",
@@ -41,9 +80,21 @@
       "priceCents": 4995,
       "art": "outdoor",
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=houten%20loopfiets",
-      "recipients": ["kind"],
-      "occasions": ["sinterklaas", "verjaardag"],
-      "interests": ["buiten", "spelen"]
+      "recipients": [
+        "kind"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "buiten",
+        "spelen"
+      ],
+      "ageGroups": [
+        "3-6",
+        "7-12"
+      ]
     },
     {
       "id": "knuffel",
@@ -52,9 +103,19 @@
       "priceCents": 1495,
       "art": "baby",
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=knuffel%20baby",
-      "recipients": ["baby"],
-      "occasions": ["geboorte", "babyshower"],
-      "interests": ["spelen"]
+      "recipients": [
+        "baby"
+      ],
+      "occasions": [
+        "geboorte",
+        "babyshower"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "ageGroups": [
+        "0-2"
+      ]
     },
     {
       "id": "hydrofiele-doeken",
@@ -63,9 +124,19 @@
       "priceCents": 1795,
       "art": "baby",
       "shopUrl": "https://www.amazon.nl/s?k=hydrofiele+doeken",
-      "recipients": ["baby"],
-      "occasions": ["geboorte", "babyshower"],
-      "interests": ["verzorging"]
+      "recipients": [
+        "baby"
+      ],
+      "occasions": [
+        "geboorte",
+        "babyshower"
+      ],
+      "interests": [
+        "verzorging"
+      ],
+      "ageGroups": [
+        "0-2"
+      ]
     },
     {
       "id": "schetsset",
@@ -73,9 +144,22 @@
       "description": "Papier en een blik kleurpotloden voor iemand die graag tekent of dat eens wil proberen.",
       "priceCents": 1450,
       "art": "creative",
-      "recipients": ["tiener", "kind"],
-      "occasions": ["verjaardag", "sinterklaas"],
-      "interests": ["creatief"]
+      "recipients": [
+        "tiener",
+        "kind"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "creatief"
+      ],
+      "ageGroups": [
+        "3-6",
+        "7-12",
+        "13-17"
+      ]
     },
     {
       "id": "waterfles",
@@ -84,9 +168,23 @@
       "priceCents": 1995,
       "art": "sport",
       "shopUrl": "https://www.amazon.nl/s?k=waterfles+rvs",
-      "recipients": ["tiener", "man", "vrouw"],
-      "occasions": ["verjaardag", "anders"],
-      "interests": ["sport", "buiten"]
+      "recipients": [
+        "tiener",
+        "man",
+        "vrouw"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "sport",
+        "buiten"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ]
     },
     {
       "id": "puzzel",
@@ -95,9 +193,24 @@
       "priceCents": 1695,
       "art": "play",
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=puzzel%201000",
-      "recipients": ["vrouw", "man", "tiener"],
-      "occasions": ["kerst", "verjaardag", "anders"],
-      "interests": ["creatief", "spelen"]
+      "recipients": [
+        "vrouw",
+        "man",
+        "tiener"
+      ],
+      "occasions": [
+        "kerst",
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "creatief",
+        "spelen"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ]
     },
     {
       "id": "geurkaars",
@@ -106,9 +219,21 @@
       "priceCents": 1250,
       "art": "warm",
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=geurkaars",
-      "recipients": ["vrouw", "man"],
-      "occasions": ["kerst", "verjaardag", "anders"],
-      "interests": ["wellness"]
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "kerst",
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "wellness"
+      ],
+      "ageGroups": [
+        "18+"
+      ]
     },
     {
       "id": "bouwset",
@@ -117,9 +242,23 @@
       "priceCents": 3495,
       "art": "play",
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=bouwset%20kinderen",
-      "recipients": ["kind", "tiener"],
-      "occasions": ["sinterklaas", "verjaardag"],
-      "interests": ["spelen", "techniek"]
+      "recipients": [
+        "kind",
+        "tiener"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "spelen",
+        "techniek"
+      ],
+      "ageGroups": [
+        "3-6",
+        "7-12",
+        "13-17"
+      ]
     },
     {
       "id": "theedoos",
@@ -128,9 +267,22 @@
       "priceCents": 1895,
       "art": "kitchen",
       "shopUrl": "https://www.amazon.nl/s?k=thee+cadeau",
-      "recipients": ["vrouw", "man"],
-      "occasions": ["verjaardag", "kerst", "anders"],
-      "interests": ["koken", "wellness"]
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst",
+        "anders"
+      ],
+      "interests": [
+        "koken",
+        "wellness"
+      ],
+      "ageGroups": [
+        "18+"
+      ]
     },
     {
       "id": "babyboek",
@@ -139,9 +291,19 @@
       "priceCents": 1995,
       "art": "book",
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=babyboek%20eerste%20jaar",
-      "recipients": ["baby"],
-      "occasions": ["geboorte", "babyshower"],
-      "interests": ["lezen"]
+      "recipients": [
+        "baby"
+      ],
+      "occasions": [
+        "geboorte",
+        "babyshower"
+      ],
+      "interests": [
+        "lezen"
+      ],
+      "ageGroups": [
+        "0-2"
+      ]
     },
     {
       "id": "oordopjes",
@@ -150,9 +312,20 @@
       "priceCents": 2995,
       "art": "audio",
       "shopUrl": "https://www.amazon.nl/s?k=draadloze+oordopjes",
-      "recipients": ["tiener"],
-      "occasions": ["sinterklaas", "verjaardag"],
-      "interests": ["muziek", "techniek"]
+      "recipients": [
+        "tiener"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "muziek",
+        "techniek"
+      ],
+      "ageGroups": [
+        "13-17"
+      ]
     },
     {
       "id": "tuinhandschoenen",
@@ -160,9 +333,21 @@
       "description": "Een stevig paar voor iemand die graag in de tuin is. Klein, nuttig en makkelijk in te pakken.",
       "priceCents": 1495,
       "art": "outdoor",
-      "recipients": ["vrouw", "man"],
-      "occasions": ["verjaardag", "kerst", "anders"],
-      "interests": ["buiten"]
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst",
+        "anders"
+      ],
+      "interests": [
+        "buiten"
+      ],
+      "ageGroups": [
+        "18+"
+      ]
     },
     {
       "id": "kinderkookset",
@@ -171,9 +356,21 @@
       "priceCents": 2495,
       "art": "kitchen",
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=kinderkookset",
-      "recipients": ["kind"],
-      "occasions": ["sinterklaas", "verjaardag"],
-      "interests": ["koken", "spelen"]
+      "recipients": [
+        "kind"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "koken",
+        "spelen"
+      ],
+      "ageGroups": [
+        "3-6",
+        "7-12"
+      ]
     },
     {
       "id": "sjaal",
@@ -182,9 +379,20 @@
       "priceCents": 2995,
       "art": "warm",
       "shopUrl": "https://www.amazon.nl/s?k=wollen+sjaal",
-      "recipients": ["vrouw", "man"],
-      "occasions": ["kerst", "sinterklaas"],
-      "interests": ["mode"]
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "kerst",
+        "sinterklaas"
+      ],
+      "interests": [
+        "mode"
+      ],
+      "ageGroups": [
+        "18+"
+      ]
     },
     {
       "id": "nachtlampje",
@@ -193,9 +401,23 @@
       "priceCents": 2295,
       "art": "baby",
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=nachtlampje%20baby",
-      "recipients": ["baby", "kind"],
-      "occasions": ["geboorte", "babyshower", "sinterklaas"],
-      "interests": ["verzorging"]
+      "recipients": [
+        "baby",
+        "kind"
+      ],
+      "occasions": [
+        "geboorte",
+        "babyshower",
+        "sinterklaas"
+      ],
+      "interests": [
+        "verzorging"
+      ],
+      "ageGroups": [
+        "0-2",
+        "3-6",
+        "7-12"
+      ]
     },
     {
       "id": "bordspel",
@@ -204,9 +426,26 @@
       "priceCents": 2795,
       "art": "play",
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=gezelschapsspel%20gezin",
-      "recipients": ["kind", "tiener", "vrouw", "man"],
-      "occasions": ["kerst", "sinterklaas", "verjaardag"],
-      "interests": ["spelen"]
+      "recipients": [
+        "kind",
+        "tiener",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "kerst",
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "ageGroups": [
+        "3-6",
+        "7-12",
+        "13-17",
+        "18+"
+      ]
     },
     {
       "id": "gastboek",
@@ -215,9 +454,22 @@
       "priceCents": 1695,
       "art": "book",
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=babyshower%20gastboek",
-      "recipients": ["vrouw", "baby"],
-      "occasions": ["babyshower", "geboorte"],
-      "interests": ["lezen", "creatief"]
+      "recipients": [
+        "vrouw",
+        "baby"
+      ],
+      "occasions": [
+        "babyshower",
+        "geboorte"
+      ],
+      "interests": [
+        "lezen",
+        "creatief"
+      ],
+      "ageGroups": [
+        "0-2",
+        "18+"
+      ]
     },
     {
       "id": "koptelefoon",
@@ -226,9 +478,24 @@
       "priceCents": 12900,
       "art": "tech",
       "shopUrl": "https://www.amazon.nl/s?k=koptelefoon+ruisonderdrukking",
-      "recipients": ["tiener", "man", "vrouw"],
-      "occasions": ["verjaardag", "sinterklaas", "kerst"],
-      "interests": ["muziek", "techniek"]
+      "recipients": [
+        "tiener",
+        "man",
+        "vrouw"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas",
+        "kerst"
+      ],
+      "interests": [
+        "muziek",
+        "techniek"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ]
     },
     {
       "id": "espressomachine",
@@ -237,9 +504,21 @@
       "priceCents": 14900,
       "art": "kitchen",
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=espressomachine",
-      "recipients": ["vrouw", "man"],
-      "occasions": ["verjaardag", "kerst", "anders"],
-      "interests": ["koken"]
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst",
+        "anders"
+      ],
+      "interests": [
+        "koken"
+      ],
+      "ageGroups": [
+        "18+"
+      ]
     },
     {
       "id": "kindertent",
@@ -248,9 +527,86 @@
       "priceCents": 7900,
       "art": "outdoor",
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=kindertent%20tuin",
-      "recipients": ["kind"],
-      "occasions": ["verjaardag", "sinterklaas"],
-      "interests": ["buiten", "spelen"]
+      "recipients": [
+        "kind"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "buiten",
+        "spelen"
+      ],
+      "ageGroups": [
+        "3-6",
+        "7-12"
+      ]
+    },
+    {
+      "id": "fotolijst-paar",
+      "name": "Dubbele fotolijst",
+      "description": "Een lijst voor twee foto's van het paar. Richtprijs voor een eenvoudig model.",
+      "priceCents": 2495,
+      "art": "warm",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=fotolijst%20dubbel",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "bruiloft"
+      ],
+      "interests": [
+        "mode"
+      ],
+      "ageGroups": [
+        "18+"
+      ]
+    },
+    {
+      "id": "dinerbon",
+      "name": "Dinerbon voor twee",
+      "description": "Een bon voor een avond uit. Kies een bedrag dat bij het paar past.",
+      "priceCents": 7500,
+      "art": "kitchen",
+      "shopUrl": "https://www.amazon.nl/s?k=dinerbon",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "bruiloft",
+        "verjaardag"
+      ],
+      "interests": [
+        "koken"
+      ],
+      "ageGroups": [
+        "18+"
+      ]
+    },
+    {
+      "id": "glazen-set",
+      "name": "Set glazen",
+      "description": "Een set mooie glazen voor thuis. Past bij een huwelijk of housewarming.",
+      "priceCents": 3495,
+      "art": "kitchen",
+      "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=wijnglazen%20set",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "bruiloft",
+        "anders"
+      ],
+      "interests": [
+        "koken"
+      ],
+      "ageGroups": [
+        "18+"
+      ]
     }
   ]
 }

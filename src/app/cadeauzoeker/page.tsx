@@ -7,7 +7,7 @@ import { shopLabel } from "@/lib/urls";
 
 export const metadata = {
   title: "Cadeauzoeker",
-  description: "Zoek een cadeau-idee op ontvanger, gelegenheid, budget en interesse.",
+  description: "Zoek een cadeau-idee op gelegenheid, leeftijd en budget.",
 };
 
 export default async function GiftFinderPage() {
@@ -33,6 +33,7 @@ export default async function GiftFinderPage() {
       recipients: [...idea.recipients],
       occasions: [...idea.occasions],
       interests: [...idea.interests],
+      ageGroups: [...idea.ageGroups],
     };
   });
 
@@ -41,7 +42,7 @@ export default async function GiftFinderPage() {
       <div className="max-w-2xl">
         <h1 className="text-5xl">Cadeauzoeker</h1>
         <p className="mt-2 text-lg text-muted">
-          Filter op voor wie het is, de gelegenheid, het budget en interesses. Zet een idee daarna op een van je lijstjes.
+          Filter op gelegenheid, leeftijd en budget. Zet een idee daarna op een van je lijstjes.
         </p>
       </div>
       <p className="note max-w-2xl">

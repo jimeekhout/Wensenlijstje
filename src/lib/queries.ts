@@ -21,6 +21,7 @@ export const getOwnedList = cache(async (ownerId: string, listId: string) => {
       occasionCustom: true,
       eventDate: true,
       shareToken: true,
+      accessHash: true,
       items: {
         orderBy: [{ sortOrder: "asc" }, { createdAt: "asc" }],
         select: itemSelect,

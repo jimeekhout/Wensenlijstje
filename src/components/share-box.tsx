@@ -1,11 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { ShareQr } from "@/components/share-qr";
 import { showToast } from "@/components/toaster";
 
 export function ShareBox({ url, title }: { url: string; title: string }) {
   const [canShare, setCanShare] = useState(false);
-  const whatsapp = `https://wa.me/?text=${encodeURIComponent(`${title}\n${url}`)}`;
+  const whatsapp = `https://wa.me/?text=${encodeURIComponent(
+    `Hoi! Hier is mijn wensenlijstje “${title}”. Kijk rustig rond en streep af wat jij koopt: ${url}`,
+  )}`;
 
   useEffect(() => {
     setCanShare(typeof navigator.share === "function");
@@ -44,12 +47,12 @@ export function ShareBox({ url, title }: { url: string; title: string }) {
         data-testid="share-url"
         onFocus={(event) => event.currentTarget.select()}
       />
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
         <button className="btn" type="button" onClick={copy}>
           Kopieer link
         </button>
         <a className="btn-secondary" href={whatsapp} target="_blank" rel="noopener noreferrer">
-          WhatsApp
+          Delen via WhatsApp
         </a>
         {canShare ? (
           <button className="btn-ghost col-span-2" type="button" onClick={share}>
@@ -57,6 +60,7 @@ export function ShareBox({ url, title }: { url: string; title: string }) {
           </button>
         ) : null}
       </div>
+      <ShareQr url={url} />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { AddToList } from "@/components/add-to-list";
 import { GiftArt } from "@/components/gift-art";
 import { OccasionIcon } from "@/components/occasion-icon";
-import { BUDGETS, INTERESTS, RECIPIENTS } from "@/data/taxonomy";
+import { AGE_GROUPS, BUDGETS, INTERESTS, RECIPIENTS } from "@/data/taxonomy";
 import { filterGiftIdeas } from "@/lib/gift-filter";
 import { OCCASIONS } from "@/lib/occasions";
 import { formatEuro } from "@/lib/price";
@@ -20,6 +20,7 @@ export type GiftCard = {
   recipients: string[];
   occasions: string[];
   interests: string[];
+  ageGroups: string[];
 };
 
 export function GiftFinder({
@@ -31,14 +32,15 @@ export function GiftFinder({
 }) {
   const [recipient, setRecipient] = useState<string | null>(null);
   const [occasion, setOccasion] = useState<string | null>(null);
+  const [ageGroup, setAgeGroup] = useState<string | null>(null);
   const [budgetId, setBudgetId] = useState("all");
   const [interests, setInterests] = useState<string[]>([]);
 
   const results = useMemo(
-    () => filterGiftIdeas(ideas, { recipient, occasion, budgetId, interests }),
-    [ideas, recipient, occasion, budgetId, interests],
+    () => filterGiftIdeas(ideas, { recipient, occasion, ageGroup, budgetId, interests }),
+    [ideas, recipient, occasion, ageGroup, budgetId, interests],
   );
-  const filtersActive = Boolean(recipient || occasion || interests.length || budgetId !== "all");
+  const filtersActive = Boolean(recipient || occasion || ageGroup || interests.length || budgetId !== "all");
 
   function toggleInterest(id: string) {
     setInterests((current) => (current.includes(id) ? current.filter((item) => item !== id) : [...current, id]));
@@ -68,6 +70,16 @@ export function GiftFinder({
             </Chip>
           ))}
         </FilterRow>
+        <FilterRow label="Leeftijd">
+          <Chip pressed={ageGroup === null} onClick={() => setAgeGroup(null)}>
+            Alle leeftijden
+          </Chip>
+          {AGE_GROUPS.map((item) => (
+            <Chip key={item.id} pressed={ageGroup === item.id} onClick={() => setAgeGroup(item.id)}>
+              {item.label}
+            </Chip>
+          ))}
+        </FilterRow>
         <FilterRow label="Budget">
           {BUDGETS.map((item) => (
             <Chip key={item.id} pressed={budgetId === item.id} onClick={() => setBudgetId(item.id)}>
@@ -89,6 +101,7 @@ export function GiftFinder({
             onClick={() => {
               setRecipient(null);
               setOccasion(null);
+              setAgeGroup(null);
               setBudgetId("all");
               setInterests([]);
             }}
