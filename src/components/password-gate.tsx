@@ -11,7 +11,7 @@ export function PasswordGate({ shareToken, title }: { shareToken: string; title:
     <div className="mx-auto w-full max-w-lg px-4 py-8" data-testid="password-gate">
       <form action={action} className="card stack p-5">
         <input type="hidden" name="shareToken" value={shareToken} />
-        <p className="text-sm font-extrabold tracking-[0.12em] text-clay uppercase">Afgeschermd lijstje</p>
+        <p className="kicker">Afgeschermd lijstje</p>
         <h1 className="text-4xl">{title}</h1>
         <p className="hint">Dit lijstje is alleen zichtbaar met het wachtwoord dat je hebt gekregen.</p>
         {state.error ? (

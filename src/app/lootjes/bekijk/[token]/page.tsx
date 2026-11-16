@@ -42,7 +42,7 @@ export default async function ParticipantPage({ params }: { params: Promise<{ to
   return (
     <div className="mx-auto flex w-full max-w-lg flex-col gap-4 px-4 py-6" data-testid="lootje-result">
       <div>
-        <p className="text-sm font-extrabold tracking-[0.12em] text-clay uppercase">{person.draw.title}</p>
+        <p className="kicker">{person.draw.title}</p>
         <h1 className="text-4xl">Hoi {person.name}</h1>
         <p className="mt-1 text-muted">
           {[person.draw.eventDate ? formatDutchDate(person.draw.eventDate) : null, person.draw.budgetCents != null ? `Richtprijs ${formatEuro(person.draw.budgetCents)}` : null]

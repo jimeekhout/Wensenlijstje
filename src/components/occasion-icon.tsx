@@ -6,7 +6,7 @@ export function OccasionIcon({ name, className = "h-6 w-6" }: Props) {
     className,
     fill: "none",
     stroke: "currentColor",
-    strokeWidth: 1.8,
+    strokeWidth: 1.75,
     strokeLinecap: "round" as const,
     strokeLinejoin: "round" as const,
     "aria-hidden": true,

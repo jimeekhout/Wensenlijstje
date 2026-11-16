@@ -17,9 +17,10 @@ const profile = {
 };
 
 test("hides Google sign-in until both credentials are set", () => {
-  assert.equal(googleAuthConfigured({}), false);
-  assert.equal(googleAuthConfigured({ GOOGLE_CLIENT_ID: "id", GOOGLE_CLIENT_SECRET: "  " }), false);
-  assert.equal(googleAuthConfigured({ GOOGLE_CLIENT_ID: "id", GOOGLE_CLIENT_SECRET: "secret" }), true);
+  const env = (values: NodeJS.ProcessEnv) => values;
+  assert.equal(googleAuthConfigured(env({ NODE_ENV: "test" })), false);
+  assert.equal(googleAuthConfigured(env({ NODE_ENV: "test", GOOGLE_CLIENT_ID: "id", GOOGLE_CLIENT_SECRET: "  " })), false);
+  assert.equal(googleAuthConfigured(env({ NODE_ENV: "test", GOOGLE_CLIENT_ID: "id", GOOGLE_CLIENT_SECRET: "secret" })), true);
 });
 
 test("uses the public origin in the redirect URI", () => {

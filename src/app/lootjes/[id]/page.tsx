@@ -40,7 +40,7 @@ export default async function DrawPage({ params }: { params: Promise<{ id: strin
   return (
     <div className="mx-auto flex w-full max-w-lg flex-col gap-4 px-4 py-6" data-testid="draw-organiser">
       <div>
-        <p className="text-sm font-extrabold tracking-[0.12em] text-clay uppercase">Lootjes</p>
+        <p className="kicker">Lootjes</p>
         <h1 className="text-4xl">{draw.title}</h1>
         <p className="mt-1 text-muted">
           {[draw.eventDate ? formatDutchDate(draw.eventDate) : null, draw.budgetCents != null ? `Budget ${formatEuro(draw.budgetCents)}` : null]
