@@ -125,7 +125,7 @@ export function Landing({ userName }: { userName: string | null }) {
         </div>
       </section>
 
-      <section className="home-section" aria-labelledby="maken-title">
+      <section className="home-section" id="zo-werkt-het" aria-labelledby="maken-title">
         <div className="home-wrap">
           <h2 id="maken-title" className="text-3xl">Zo maak je je lijstje</h2>
           <ol className="step-grid">
@@ -183,12 +183,6 @@ export function Landing({ userName }: { userName: string | null }) {
         </div>
       </section>
 
-      <section className="home-section">
-        <div className="home-wrap">
-          <FaqList />
-        </div>
-      </section>
-
       <section className="home-section" aria-labelledby="slot-title">
         <div className="home-wrap">
           <div className="cta-banner">
@@ -202,6 +196,12 @@ export function Landing({ userName }: { userName: string | null }) {
             </p>
             <HomeCtas loggedIn={loggedIn} />
           </div>
+        </div>
+      </section>
+
+      <section className="home-section" id="veelgestelde-vragen" aria-labelledby="faq-title">
+        <div className="home-wrap">
+          <FaqList />
         </div>
       </section>
     </div>

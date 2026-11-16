@@ -646,36 +646,88 @@ summary {
 
 .site-footer {
   margin-top: auto;
+  background: #3a2a4a;
+  color: #fffaf8;
+  padding: 3.5rem 1.25rem 1.5rem;
+}
+
+.footer-grid {
+  width: min(100%, 64rem);
+  margin-inline: auto;
+  display: grid;
+  gap: 2.25rem;
+}
+
+.footer-brand {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.7rem;
-  padding: 2rem 1rem 2.25rem;
-  border-top: 1px solid #eadfd4;
-  color: #5c5468;
-  text-align: center;
-  font-size: 0.92rem;
+  align-items: flex-start;
+  gap: 0.55rem;
 }
 
-.footer-nav {
+.footer-mark {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.footer-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -0.03em;
+}
+
+.footer-tagline {
+  margin: 0;
+  color: #f6eef4;
+}
+
+.footer-heading {
+  margin: 0 0 0.75rem;
+  font-weight: 700;
+}
+
+.site-footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.35rem 1rem;
+  flex-direction: column;
+  gap: 0.15rem;
 }
 
-.footer-nav a {
-  min-height: 2.75rem;
+.site-footer a {
   display: inline-flex;
   align-items: center;
-  font-weight: 700;
+  min-height: 2.75rem;
+  color: #fffaf8;
+  font-weight: 650;
   text-decoration: underline;
   text-underline-offset: 0.18em;
 }
 
-.footer-mark {
-  width: 2.1rem;
-  height: 2.1rem;
+.site-footer a:hover {
+  color: #f2c14d;
+}
+
+.footer-bar {
+  width: min(100%, 64rem);
+  margin: 2.5rem auto 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 250, 248, 0.2);
+  color: #f6eef4;
+  font-size: 0.92rem;
+}
+
+@media (min-width: 800px) {
+  .site-footer {
+    padding: 4.5rem 1.5rem 1.75rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -706,12 +758,17 @@ summary {
   }
 }
 
-.home-section {
-  padding: 1.25rem 0;
+#zo-werkt-het,
+#veelgestelde-vragen {
+  scroll-margin-top: 5.5rem;
 }
 
-.home-section + .home-section {
-  padding-top: 0.35rem;
+.home-section {
+  padding: 4rem 0;
+}
+
+.home > .home-section:nth-child(even) {
+  background: #f8e8e6;
 }
 
 .home-wrap {
@@ -723,9 +780,21 @@ summary {
   width: min(100% - 2rem, 64rem);
   margin-inline: auto;
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
   align-items: center;
-  padding-top: 0.5rem;
+}
+
+.home-hero .stack {
+  gap: 1.25rem;
+}
+
+.home-wrap > h2 + p {
+  margin-top: 1rem;
+}
+
+.home-wrap > .stack {
+  gap: 1.15rem;
+  margin-top: 2rem;
 }
 
 .home-ctas {
@@ -737,8 +806,8 @@ summary {
 .usp-grid,
 .step-grid {
   display: grid;
-  gap: 0.75rem;
-  margin: 1rem 0 0;
+  gap: 1.5rem;
+  margin: 2.25rem 0 0;
   padding: 0;
   list-style: none;
 }
@@ -756,8 +825,8 @@ summary {
 .cta-panel {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  padding: 1.25rem;
+  gap: 1.25rem;
+  padding: 1.75rem;
   border: 1px solid #eadfd4;
   border-radius: 1.15rem;
   background: #fff;
@@ -766,8 +835,8 @@ summary {
 .cta-banner {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  padding: 1.4rem;
+  gap: 1.25rem;
+  padding: 2rem 1.5rem;
   border-radius: 1.15rem;
   background: #3a2a4a;
   color: #fffaf8;
@@ -794,18 +863,32 @@ summary {
 
 @media (min-width: 800px) {
   .home-section {
-    padding: 1.6rem 0 0.4rem;
+    padding: 6.5rem 0;
   }
 
   .home-hero {
     grid-template-columns: 1.05fr 0.95fr;
-    gap: 2rem;
-    padding-top: 1.25rem;
+    gap: 3.5rem;
+  }
+
+  .home-hero .stack {
+    gap: 1.5rem;
   }
 
   .usp-grid,
   .step-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+    margin-top: 2.75rem;
+  }
+
+  .home-wrap > .stack {
+    margin-top: 2.5rem;
+  }
+
+  .cta-panel,
+  .cta-banner {
+    padding: 2.75rem;
   }
 }
 
