@@ -1,8 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
-import Link from "next/link";
 import { Header } from "@/components/header";
-import { LogoMark } from "@/components/logo-mark";
+import { SiteFooter } from "@/components/site-footer";
 import { Toaster } from "@/components/toaster";
 import { getCurrentUser } from "@/lib/auth";
 import "./globals.css";
@@ -49,17 +48,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <main id="inhoud" className="flex-1">
           {children}
         </main>
-        <footer className="site-footer">
-          <LogoMark className="footer-mark" />
-          <p className="font-bold text-ink">hetwensenlijstje.nl</p>
-          <nav className="footer-nav" aria-label="Voettekst">
-            <Link href="/">Home</Link>
-            <Link href="/cadeauzoeker">Cadeauzoeker</Link>
-            <Link href="/lootjes">Lootjes</Link>
-            {user ? <Link href="/lijsten">Mijn lijstjes</Link> : <Link href="/inloggen">Inloggen</Link>}
-          </nav>
-          <p>Wensen delen, verrassingen bewaren.</p>
-        </footer>
+        <SiteFooter loggedIn={Boolean(user)} />
         <Toaster />
       </body>
     </html>
