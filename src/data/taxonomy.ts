@@ -16,9 +16,23 @@ export type GiftArt = (typeof GIFT_ARTS)[number];
 export const RECIPIENTS = [
   { id: "vrouw", label: "Vrouw" },
   { id: "man", label: "Man" },
+  { id: "koppel", label: "Koppel" },
   { id: "tiener", label: "Tiener" },
   { id: "kind", label: "Kind" },
   { id: "baby", label: "Baby" },
+] as const;
+
+export const CATEGORIES = [
+  { id: "tech", label: "Tech" },
+  { id: "boeken", label: "Boeken" },
+  { id: "koken", label: "Koken" },
+  { id: "sport", label: "Sport" },
+  { id: "wellness", label: "Wellness" },
+  { id: "spellen", label: "Spellen" },
+  { id: "wonen", label: "Wonen" },
+  { id: "ervaringen", label: "Ervaringen" },
+  { id: "beauty", label: "Beauty" },
+  { id: "speelgoed", label: "Speelgoed" },
 ] as const;
 
 export const INTERESTS = [
@@ -54,3 +68,4 @@ export const BUDGETS = [
 
 export type RecipientId = (typeof RECIPIENTS)[number]["id"];
 export type InterestId = (typeof INTERESTS)[number]["id"];
+export type CategoryId = (typeof CATEGORIES)[number]["id"];

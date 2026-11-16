@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { GiftFinder, type GiftCard } from "@/components/gift-finder";
 import { giftIdeas } from "@/data/gift-ideas";
 import { applyAffiliate } from "@/lib/affiliate";
@@ -31,6 +32,8 @@ export default async function GiftFinderPage() {
       image: idea.image,
       imageAlt: idea.imageAlt,
       imageUrl: idea.imageUrl,
+      popularity: idea.popularity,
+      categories: [...idea.categories],
       shopUrl,
       shopName: shopUrl ? shopLabel(shopUrl) : undefined,
       recipients: [...idea.recipients],
@@ -45,13 +48,15 @@ export default async function GiftFinderPage() {
       <div className="max-w-2xl">
         <h1 className="text-5xl">Cadeauzoeker</h1>
         <p className="mt-2 text-lg text-muted">
-          Filter op gelegenheid, leeftijd en budget. Zet een idee daarna op een van je lijstjes.
+          Zoek op naam of filter op gelegenheid, leeftijd en budget. Zet een idee daarna op een lijstje.
         </p>
       </div>
       <p className="note max-w-2xl">
-        Dit is een eerste reeks voorbeeldideeën. De plaatjes zijn illustraties, geen productfoto van een webshop. Prijzen zijn richtprijzen en de links zoeken op een webshop, ze wijzen nog niet naar één vast product.
+        De plaatjes zijn illustraties. Prijzen zijn richtprijzen en geen aanbod van een winkel.
       </p>
-      <GiftFinder ideas={cards} lists={lists} />
+      <Suspense fallback={<p className="hint">Cadeaus laden…</p>}>
+        <GiftFinder ideas={cards} lists={lists} />
+      </Suspense>
     </div>
   );
 }

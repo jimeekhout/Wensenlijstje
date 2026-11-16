@@ -115,11 +115,15 @@ test("signup, list, claim privacy, shop prefill and cadeauzoeker", async ({ page
   await viewer.page.screenshot({ path: "/tmp/shared_list_claimed.png", fullPage: true });
 
   await page.goto("/cadeauzoeker");
+  const filters = page.getByRole("button", { name: /^Filters/ });
+  if (await filters.isVisible()) await filters.click();
   await page.getByRole("button", { name: "Baby", exact: true }).click();
+  const closeFilters = page.getByRole("button", { name: "Sluiten" });
+  if (await closeFilters.isVisible()) await closeFilters.click();
   await expect(page.getByRole("heading", { name: "Zachte knuffel" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Compacte espressomachine" })).toHaveCount(0);
   const knuffel = page.locator("article", { hasText: "Zachte knuffel" });
-  await knuffel.getByRole("button", { name: "Toevoegen aan mijn lijstje" }).click();
+  await knuffel.getByRole("button", { name: "Zet op mijn lijstje" }).click();
   await expect(knuffel.getByText(/Staat nu op Sinterklaas voor Noor/)).toBeVisible();
   await page.screenshot({ path: "/tmp/cadeauzoeker.png", fullPage: true });
 
