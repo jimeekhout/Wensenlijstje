@@ -1,0 +1,73 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String     @id @default(cuid())
+  email        String     @unique
+  name         String
+  passwordHash String
+  createdAt    DateTime   @default(now())
+  lists        WishList[]
+  sessions     Session[]
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  tokenHash String   @unique
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+model WishList {
+  id             String     @id @default(cuid())
+  title          String
+  occasion       String
+  occasionCustom String?
+  eventDate      DateTime?
+  shareToken     String     @unique
+  ownerId        String
+  owner          User       @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  items          WishItem[]
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+
+  @@index([ownerId])
+}
+
+model WishItem {
+  id          String   @id @default(cuid())
+  listId      String
+  list        WishList @relation(fields: [listId], references: [id], onDelete: Cascade)
+  name        String
+  description String?
+  url         String?
+  priceCents  Int?
+  imageUrl    String?
+  priority    Int?
+  sortOrder   Int      @default(0)
+  claim       Claim?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([listId])
+}
+
+/// A reservation made by a visitor. Never query this from the owner's pages.
+model Claim {
+  id          String   @id @default(cuid())
+  itemId      String   @unique
+  item        WishItem @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  claimerName String
+  secretHash  String
+  createdAt   DateTime @default(now())
+}
