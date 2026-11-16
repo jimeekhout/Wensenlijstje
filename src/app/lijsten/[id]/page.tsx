@@ -34,6 +34,7 @@ export default async function OwnerListPage({ params }: { params: Promise<{ id: 
     <div className="mx-auto flex w-full max-w-lg flex-col gap-4 px-4 py-6" data-testid="owner-list">
       <OccasionBanner occasion={list.occasion} custom={list.occasionCustom} title={list.title} detail={detail} />
       <ShareBox url={`${origin}/delen/${list.shareToken}`} title={list.title} />
+      {list.accessHash ? <p className="hint">Dit lijstje is afgeschermd. Gasten vullen eerst het wachtwoord in.</p> : null}
       <aside className="note">
         <p className="font-extrabold">Dit blijft een verrassing.</p>
         <p className="mt-1">
@@ -68,6 +69,7 @@ export default async function OwnerListPage({ params }: { params: Promise<{ id: 
               occasion: list.occasion,
               occasionCustom: list.occasionCustom ?? "",
               eventDate: toDateInputValue(list.eventDate),
+              hasPassword: Boolean(list.accessHash),
             }}
           />
           <DangerConfirm

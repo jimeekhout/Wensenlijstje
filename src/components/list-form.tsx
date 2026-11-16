@@ -12,6 +12,7 @@ type Initial = {
   occasion: string;
   occasionCustom: string;
   eventDate: string;
+  hasPassword?: boolean;
 };
 
 export function ListForm({
@@ -30,6 +31,7 @@ export function ListForm({
   const action = mode === "create" ? createList : updateList;
   const [state, formAction] = useActionState(action, initialActionState);
   const [occasion, setOccasion] = useState(initial?.occasion ?? "");
+  const [usePassword, setUsePassword] = useState(Boolean(initial?.hasPassword));
 
   return (
     <form action={formAction} className="stack">
@@ -122,8 +124,40 @@ export function ListForm({
           name="eventDate"
           defaultValue={initial?.eventDate ?? ""}
         />
-        <p className="hint">Bijvoorbeeld de dag van het feest.</p>
+        <p className="hint">Bijvoorbeeld de dag van het feest. De datum komt op het lijstje en op de deelpagina.</p>
       </div>
+
+      <fieldset className="stack">
+        <label className="flex min-h-12 items-center gap-3 font-bold">
+          <input
+            type="checkbox"
+            name="usePassword"
+            checked={usePassword}
+            onChange={(event) => setUsePassword(event.target.checked)}
+          />
+          Alleen zichtbaar met een wachtwoord
+        </label>
+        {usePassword ? (
+          <div>
+            <label className="label" htmlFor="list-password">
+              {initial?.hasPassword ? "Nieuw wachtwoord" : "Wachtwoord"}
+            </label>
+            <input
+              id="list-password"
+              className="input"
+              name="listPassword"
+              type="password"
+              minLength={4}
+              maxLength={80}
+              autoComplete="new-password"
+              required={!initial?.hasPassword}
+              placeholder={initial?.hasPassword ? "Laat leeg om het huidige te houden" : "Minimaal 4 tekens"}
+            />
+          </div>
+        ) : initial?.hasPassword ? (
+          <input type="hidden" name="removePassword" value="on" />
+        ) : null}
+      </fieldset>
 
       <SubmitButton>{mode === "create" ? "Lijstje maken" : "Wijzigingen opslaan"}</SubmitButton>
     </form>

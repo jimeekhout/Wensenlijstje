@@ -24,6 +24,9 @@ export function Header({ userName }: { userName: string | null }) {
               <Link href="/lijsten" className="btn-ghost min-h-11 px-3">
                 Mijn lijstjes
               </Link>
+              <Link href="/lootjes" className="btn-ghost min-h-11 px-3">
+                Lootjes
+              </Link>
               <form action={logout}>
                 <button className="btn-secondary min-h-11 px-3" type="submit">
                   Uitloggen

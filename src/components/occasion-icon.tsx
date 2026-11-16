@@ -47,6 +47,13 @@ export function OccasionIcon({ name, className = "h-6 w-6" }: Props) {
           <path d="M8.5 7h7v8.5a3.5 3.5 0 0 1-7 0V7Z" />
         </svg>
       );
+    case "bruiloft":
+      return (
+        <svg {...common}>
+          <circle cx="9" cy="12" r="4" />
+          <circle cx="15" cy="12" r="4" />
+        </svg>
+      );
     case "geboorte":
       return (
         <svg {...common}>

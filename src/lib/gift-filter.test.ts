@@ -12,6 +12,7 @@ test("combines recipient, occasion, budget and any matching interest", () => {
   const kids = filterGiftIdeas(ideas, {
     recipient: "kind",
     occasion: "sinterklaas",
+    ageGroup: null,
     budgetId: "30-50",
     interests: ["spelen", "muziek"],
   });
@@ -20,6 +21,7 @@ test("combines recipient, occasion, budget and any matching interest", () => {
   const none = filterGiftIdeas(ideas, {
     recipient: "baby",
     occasion: null,
+    ageGroup: null,
     budgetId: "all",
     interests: [],
   });
