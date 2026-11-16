@@ -9,16 +9,20 @@ import { initialActionState } from "@/lib/action-state";
 export function AddToList({
   ideaId,
   lists,
+  label = "Zet op mijn lijstje",
+  returnTo = "/cadeauzoeker",
 }: {
   ideaId: string;
   lists: { id: string; title: string }[] | null;
+  label?: string;
+  returnTo?: string;
 }) {
   const [state, action] = useActionState(addIdeaToList, initialActionState);
 
   if (lists === null) {
     return (
-      <Link className="btn w-full" href={`/inloggen?next=${encodeURIComponent("/cadeauzoeker")}`}>
-        Toevoegen aan mijn lijstje
+      <Link className="btn w-full" href={`/inloggen?next=${encodeURIComponent(returnTo)}`}>
+        {label}
       </Link>
     );
   }
@@ -26,7 +30,7 @@ export function AddToList({
   if (lists.length === 0) {
     return (
       <Link className="btn w-full" href={`/lijsten/nieuw?idee=${encodeURIComponent(ideaId)}`}>
-        Toevoegen aan mijn lijstje
+        {label}
       </Link>
     );
   }
@@ -60,7 +64,7 @@ export function AddToList({
           </option>
         ))}
       </select>
-      <SubmitButton>Toevoegen aan mijn lijstje</SubmitButton>
+      <SubmitButton>{label}</SubmitButton>
     </form>
   );
 }

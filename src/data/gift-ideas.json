@@ -1,5 +1,5 @@
 {
-  "notice": "PLACEHOLDER CATALOG. These are example gift ideas with indicative prices and shop search links, meant to be edited or replaced. Affiliate codes are not stored here.",
+  "notice": "Voorbeeldcatalogus met richtprijzen. De illustraties zijn van hetwensenlijstje.nl. Een echte productfoto kan later via imageUrl.",
   "ideas": [
     {
       "id": "wollen-sokken",
@@ -26,7 +26,11 @@
         "18+"
       ],
       "image": "/cadeaus/wollen-sokken.svg",
-      "imageAlt": "Illustratie van twee wollen sokken"
+      "imageAlt": "Illustratie van twee wollen sokken",
+      "categories": [
+        "wellness"
+      ],
+      "popularity": 40
     },
     {
       "id": "kookboek",
@@ -52,7 +56,11 @@
         "18+"
       ],
       "image": "/cadeaus/kookboek.svg",
-      "imageAlt": "Illustratie van een open kookboek"
+      "imageAlt": "Illustratie van een open kookboek",
+      "categories": [
+        "koken"
+      ],
+      "popularity": 57
     },
     {
       "id": "kinder-koptelefoon",
@@ -77,7 +85,11 @@
         "7-12"
       ],
       "image": "/cadeaus/kinder-koptelefoon.svg",
-      "imageAlt": "Illustratie van een koptelefoon voor kinderen"
+      "imageAlt": "Illustratie van een koptelefoon voor kinderen",
+      "categories": [
+        "tech"
+      ],
+      "popularity": 74
     },
     {
       "id": "loopfiets",
@@ -102,7 +114,11 @@
         "7-12"
       ],
       "image": "/cadeaus/loopfiets.svg",
-      "imageAlt": "Illustratie van een houten loopfiets"
+      "imageAlt": "Illustratie van een houten loopfiets",
+      "categories": [
+        "sport"
+      ],
+      "popularity": 91
     },
     {
       "id": "knuffel",
@@ -125,7 +141,11 @@
         "0-2"
       ],
       "image": "/cadeaus/knuffel.svg",
-      "imageAlt": "Illustratie van een zachte knuffel"
+      "imageAlt": "Illustratie van een zachte knuffel",
+      "categories": [
+        "wellness"
+      ],
+      "popularity": 53
     },
     {
       "id": "hydrofiele-doeken",
@@ -148,7 +168,11 @@
         "0-2"
       ],
       "image": "/cadeaus/hydrofiele-doeken.svg",
-      "imageAlt": "Illustratie van een stapel hydrofiele doeken"
+      "imageAlt": "Illustratie van een stapel hydrofiele doeken",
+      "categories": [
+        "wellness"
+      ],
+      "popularity": 70
     },
     {
       "id": "schetsset",
@@ -173,7 +197,11 @@
         "13-17"
       ],
       "image": "/cadeaus/schetsset.svg",
-      "imageAlt": "Illustratie van een schetsboek met potloden"
+      "imageAlt": "Illustratie van een schetsboek met potloden",
+      "categories": [
+        "speelgoed"
+      ],
+      "popularity": 87
     },
     {
       "id": "waterfles",
@@ -200,7 +228,11 @@
         "18+"
       ],
       "image": "/cadeaus/waterfles.svg",
-      "imageAlt": "Illustratie van een stevige waterfles"
+      "imageAlt": "Illustratie van een stevige waterfles",
+      "categories": [
+        "sport"
+      ],
+      "popularity": 49
     },
     {
       "id": "puzzel",
@@ -228,7 +260,11 @@
         "18+"
       ],
       "image": "/cadeaus/puzzel.svg",
-      "imageAlt": "Illustratie van een puzzelstuk"
+      "imageAlt": "Illustratie van een puzzelstuk",
+      "categories": [
+        "speelgoed"
+      ],
+      "popularity": 66
     },
     {
       "id": "geurkaars",
@@ -253,7 +289,11 @@
         "18+"
       ],
       "image": "/cadeaus/geurkaars.svg",
-      "imageAlt": "Illustratie van een brandende geurkaars"
+      "imageAlt": "Illustratie van een brandende geurkaars",
+      "categories": [
+        "wellness"
+      ],
+      "popularity": 83
     },
     {
       "id": "bouwset",
@@ -280,7 +320,11 @@
         "13-17"
       ],
       "image": "/cadeaus/bouwset.svg",
-      "imageAlt": "Illustratie van gekleurde bouwblokken"
+      "imageAlt": "Illustratie van gekleurde bouwblokken",
+      "categories": [
+        "spellen"
+      ],
+      "popularity": 45
     },
     {
       "id": "theedoos",
@@ -306,7 +350,11 @@
         "18+"
       ],
       "image": "/cadeaus/theedoos.svg",
-      "imageAlt": "Illustratie van een theekop"
+      "imageAlt": "Illustratie van een theekop",
+      "categories": [
+        "koken"
+      ],
+      "popularity": 62
     },
     {
       "id": "babyboek",
@@ -329,7 +377,11 @@
         "0-2"
       ],
       "image": "/cadeaus/babyboek.svg",
-      "imageAlt": "Illustratie van een invulboek voor een baby"
+      "imageAlt": "Illustratie van een invulboek voor een baby",
+      "categories": [
+        "boeken"
+      ],
+      "popularity": 79
     },
     {
       "id": "oordopjes",
@@ -353,7 +405,11 @@
         "13-17"
       ],
       "image": "/cadeaus/oordopjes.svg",
-      "imageAlt": "Illustratie van draadloze oordopjes"
+      "imageAlt": "Illustratie van draadloze oordopjes",
+      "categories": [
+        "tech"
+      ],
+      "popularity": 41
     },
     {
       "id": "tuinhandschoenen",
@@ -377,7 +433,11 @@
         "18+"
       ],
       "image": "/cadeaus/tuinhandschoenen.svg",
-      "imageAlt": "Illustratie van tuinhandschoenen"
+      "imageAlt": "Illustratie van tuinhandschoenen",
+      "categories": [
+        "sport"
+      ],
+      "popularity": 58
     },
     {
       "id": "kinderkookset",
@@ -402,7 +462,11 @@
         "7-12"
       ],
       "image": "/cadeaus/kinderkookset.svg",
-      "imageAlt": "Illustratie van een pannetje uit een kinderkookset"
+      "imageAlt": "Illustratie van een pannetje uit een kinderkookset",
+      "categories": [
+        "koken"
+      ],
+      "popularity": 75
     },
     {
       "id": "sjaal",
@@ -426,7 +490,11 @@
         "18+"
       ],
       "image": "/cadeaus/sjaal.svg",
-      "imageAlt": "Illustratie van een wollen sjaal"
+      "imageAlt": "Illustratie van een wollen sjaal",
+      "categories": [
+        "beauty"
+      ],
+      "popularity": 92
     },
     {
       "id": "nachtlampje",
@@ -453,7 +521,11 @@
         "7-12"
       ],
       "image": "/cadeaus/nachtlampje.svg",
-      "imageAlt": "Illustratie van een zacht nachtlampje"
+      "imageAlt": "Illustratie van een zacht nachtlampje",
+      "categories": [
+        "wellness"
+      ],
+      "popularity": 54
     },
     {
       "id": "bordspel",
@@ -483,7 +555,11 @@
         "18+"
       ],
       "image": "/cadeaus/bordspel.svg",
-      "imageAlt": "Illustratie van een bordspel"
+      "imageAlt": "Illustratie van een bordspel",
+      "categories": [
+        "spellen"
+      ],
+      "popularity": 71
     },
     {
       "id": "gastboek",
@@ -509,7 +585,11 @@
         "18+"
       ],
       "image": "/cadeaus/gastboek.svg",
-      "imageAlt": "Illustratie van een gastboek"
+      "imageAlt": "Illustratie van een gastboek",
+      "categories": [
+        "boeken"
+      ],
+      "popularity": 88
     },
     {
       "id": "koptelefoon",
@@ -537,7 +617,11 @@
         "18+"
       ],
       "image": "/cadeaus/koptelefoon.svg",
-      "imageAlt": "Illustratie van een koptelefoon"
+      "imageAlt": "Illustratie van een koptelefoon",
+      "categories": [
+        "tech"
+      ],
+      "popularity": 50
     },
     {
       "id": "espressomachine",
@@ -562,7 +646,11 @@
         "18+"
       ],
       "image": "/cadeaus/espressomachine.svg",
-      "imageAlt": "Illustratie van een compacte espressomachine"
+      "imageAlt": "Illustratie van een compacte espressomachine",
+      "categories": [
+        "koken"
+      ],
+      "popularity": 67
     },
     {
       "id": "kindertent",
@@ -587,7 +675,11 @@
         "7-12"
       ],
       "image": "/cadeaus/kindertent.svg",
-      "imageAlt": "Illustratie van een kindertent"
+      "imageAlt": "Illustratie van een kindertent",
+      "categories": [
+        "sport"
+      ],
+      "popularity": 84
     },
     {
       "id": "fotolijst-paar",
@@ -598,7 +690,8 @@
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=fotolijst%20dubbel",
       "recipients": [
         "vrouw",
-        "man"
+        "man",
+        "koppel"
       ],
       "occasions": [
         "bruiloft"
@@ -610,7 +703,11 @@
         "18+"
       ],
       "image": "/cadeaus/fotolijst-paar.svg",
-      "imageAlt": "Illustratie van twee fotolijsten"
+      "imageAlt": "Illustratie van twee fotolijsten",
+      "categories": [
+        "ervaringen"
+      ],
+      "popularity": 46
     },
     {
       "id": "dinerbon",
@@ -621,7 +718,8 @@
       "shopUrl": "https://www.amazon.nl/s?k=dinerbon",
       "recipients": [
         "vrouw",
-        "man"
+        "man",
+        "koppel"
       ],
       "occasions": [
         "bruiloft",
@@ -634,7 +732,11 @@
         "18+"
       ],
       "image": "/cadeaus/dinerbon.svg",
-      "imageAlt": "Illustratie van een dinerbon"
+      "imageAlt": "Illustratie van een dinerbon",
+      "categories": [
+        "ervaringen"
+      ],
+      "popularity": 63
     },
     {
       "id": "glazen-set",
@@ -645,7 +747,8 @@
       "shopUrl": "https://www.bol.com/nl/nl/s/?searchtext=wijnglazen%20set",
       "recipients": [
         "vrouw",
-        "man"
+        "man",
+        "koppel"
       ],
       "occasions": [
         "bruiloft",
@@ -658,7 +761,2752 @@
         "18+"
       ],
       "image": "/cadeaus/glazen-set.svg",
-      "imageAlt": "Illustratie van twee drinkglazen"
+      "imageAlt": "Illustratie van twee drinkglazen",
+      "categories": [
+        "ervaringen"
+      ],
+      "popularity": 80
+    },
+    {
+      "id": "draadloze-muis",
+      "name": "Draadloze muis",
+      "description": "Een stille muis voor op een bureau.",
+      "priceCents": 2495,
+      "art": "tech",
+      "image": "/cadeaus/koptelefoon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie tech",
+      "recipients": [
+        "man",
+        "vrouw",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "techniek"
+      ],
+      "categories": [
+        "tech"
+      ],
+      "ageGroups": [
+        "18+",
+        "13-17"
+      ],
+      "popularity": 70
+    },
+    {
+      "id": "notitieboek-met-stippen",
+      "name": "Notitieboek met stippen",
+      "description": "Een leeg boek voor lijstjes, schetsen of een dagboek.",
+      "priceCents": 1295,
+      "art": "book",
+      "image": "/cadeaus/kookboek.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie boeken",
+      "recipients": [
+        "vrouw",
+        "man",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "lezen"
+      ],
+      "categories": [
+        "boeken"
+      ],
+      "ageGroups": [
+        "18+",
+        "13-17"
+      ],
+      "popularity": 60
+    },
+    {
+      "id": "kookboek-voor-snelle-maaltijden",
+      "name": "Kookboek voor snelle maaltijden",
+      "description": "Recepten die op een doordeweekse avond passen.",
+      "priceCents": 2200,
+      "art": "book",
+      "image": "/cadeaus/kookboek.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie boeken",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst",
+        "anders"
+      ],
+      "interests": [
+        "lezen"
+      ],
+      "categories": [
+        "boeken"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 64
+    },
+    {
+      "id": "theemok-met-zeef",
+      "name": "Theemok met zeef",
+      "description": "Een grote mok om losse thee in te zetten.",
+      "priceCents": 1495,
+      "art": "kitchen",
+      "image": "/cadeaus/theedoos.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie koken",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "koken"
+      ],
+      "categories": [
+        "koken"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 55
+    },
+    {
+      "id": "snijplank-van-hout",
+      "name": "Snijplank van hout",
+      "description": "Een stevige plank voor dagelijks snijden.",
+      "priceCents": 1895,
+      "art": "kitchen",
+      "image": "/cadeaus/theedoos.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie koken",
+      "recipients": [
+        "vrouw",
+        "man",
+        "koppel"
+      ],
+      "occasions": [
+        "verjaardag",
+        "bruiloft",
+        "anders"
+      ],
+      "interests": [
+        "koken"
+      ],
+      "categories": [
+        "koken"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 48
+    },
+    {
+      "id": "yogamat",
+      "name": "Yogamat",
+      "description": "Een mat voor thuis, met ruimte om te liggen.",
+      "priceCents": 2795,
+      "art": "sport",
+      "image": "/cadeaus/waterfles.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie sport",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "sport"
+      ],
+      "categories": [
+        "sport"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 72
+    },
+    {
+      "id": "springtouw",
+      "name": "Springtouw",
+      "description": "Een licht touw voor een korte work-out.",
+      "priceCents": 995,
+      "art": "sport",
+      "image": "/cadeaus/waterfles.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie sport",
+      "recipients": [
+        "kind",
+        "tiener",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "sport"
+      ],
+      "categories": [
+        "sport"
+      ],
+      "ageGroups": [
+        "7-12",
+        "13-17",
+        "18+"
+      ],
+      "popularity": 40
+    },
+    {
+      "id": "badhanddoek",
+      "name": "Badhanddoek",
+      "description": "Een grote zachte handdoek.",
+      "priceCents": 1995,
+      "art": "warm",
+      "image": "/cadeaus/geurkaars.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wellness",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "wellness"
+      ],
+      "categories": [
+        "wellness"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 44
+    },
+    {
+      "id": "slaapmasker",
+      "name": "Slaapmasker",
+      "description": "Een zacht masker voor wie licht slaapt.",
+      "priceCents": 1295,
+      "art": "warm",
+      "image": "/cadeaus/geurkaars.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wellness",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "wellness"
+      ],
+      "categories": [
+        "wellness"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 51
+    },
+    {
+      "id": "kaartspel-voor-onderweg",
+      "name": "Kaartspel voor onderweg",
+      "description": "Een klein spel dat in een tas past.",
+      "priceCents": 995,
+      "art": "play",
+      "image": "/cadeaus/bordspel.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie spellen",
+      "recipients": [
+        "kind",
+        "tiener",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "kerst",
+        "verjaardag"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "spellen"
+      ],
+      "ageGroups": [
+        "7-12",
+        "13-17",
+        "18+"
+      ],
+      "popularity": 77
+    },
+    {
+      "id": "dobbelstenen-in-een-zakje",
+      "name": "Dobbelstenen in een zakje",
+      "description": "Een set stenen voor gezelschapsspellen.",
+      "priceCents": 795,
+      "art": "play",
+      "image": "/cadeaus/bordspel.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie spellen",
+      "recipients": [
+        "kind",
+        "tiener",
+        "man",
+        "vrouw"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "spellen"
+      ],
+      "ageGroups": [
+        "7-12",
+        "13-17",
+        "18+"
+      ],
+      "popularity": 36
+    },
+    {
+      "id": "fotolijst",
+      "name": "Fotolijst",
+      "description": "Een lijst voor een foto op een kast of bureau.",
+      "priceCents": 1495,
+      "art": "warm",
+      "image": "/cadeaus/glazen-set.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wonen",
+      "recipients": [
+        "vrouw",
+        "man",
+        "koppel"
+      ],
+      "occasions": [
+        "verjaardag",
+        "bruiloft",
+        "anders"
+      ],
+      "interests": [
+        "creatief"
+      ],
+      "categories": [
+        "wonen"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 42
+    },
+    {
+      "id": "kussenhoes",
+      "name": "Kussenhoes",
+      "description": "Een nieuwe hoes voor de bank of het bed.",
+      "priceCents": 1695,
+      "art": "warm",
+      "image": "/cadeaus/glazen-set.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wonen",
+      "recipients": [
+        "vrouw",
+        "man",
+        "koppel"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "creatief"
+      ],
+      "categories": [
+        "wonen"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 38
+    },
+    {
+      "id": "vaas-van-keramiek",
+      "name": "Vaas van keramiek",
+      "description": "Een eenvoudige vaas voor een bos bloemen.",
+      "priceCents": 2495,
+      "art": "warm",
+      "image": "/cadeaus/glazen-set.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wonen",
+      "recipients": [
+        "vrouw",
+        "koppel"
+      ],
+      "occasions": [
+        "verjaardag",
+        "bruiloft"
+      ],
+      "interests": [
+        "creatief"
+      ],
+      "categories": [
+        "wonen"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 46
+    },
+    {
+      "id": "workshop-tegoed",
+      "name": "Workshop tegoed",
+      "description": "Een tegoed voor een middag workshop, zelf in te vullen.",
+      "priceCents": 4900,
+      "art": "outdoor",
+      "image": "/cadeaus/dinerbon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie ervaringen",
+      "recipients": [
+        "vrouw",
+        "man",
+        "koppel",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst",
+        "bruiloft"
+      ],
+      "interests": [
+        "buiten"
+      ],
+      "categories": [
+        "ervaringen"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 88
+    },
+    {
+      "id": "bioscoopbon",
+      "name": "Bioscoopbon",
+      "description": "Een bon voor een filmavond.",
+      "priceCents": 2500,
+      "art": "outdoor",
+      "image": "/cadeaus/dinerbon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie ervaringen",
+      "recipients": [
+        "vrouw",
+        "man",
+        "koppel",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas",
+        "kerst"
+      ],
+      "interests": [
+        "buiten"
+      ],
+      "categories": [
+        "ervaringen"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 90
+    },
+    {
+      "id": "picknickkleed",
+      "name": "Picknickkleed",
+      "description": "Een kleed voor een middag in het park.",
+      "priceCents": 1995,
+      "art": "outdoor",
+      "image": "/cadeaus/dinerbon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie ervaringen",
+      "recipients": [
+        "koppel",
+        "vrouw",
+        "man",
+        "kind"
+      ],
+      "occasions": [
+        "verjaardag",
+        "bruiloft",
+        "anders"
+      ],
+      "interests": [
+        "buiten"
+      ],
+      "categories": [
+        "ervaringen"
+      ],
+      "ageGroups": [
+        "18+",
+        "7-12"
+      ],
+      "popularity": 52
+    },
+    {
+      "id": "lippenbalsem-set",
+      "name": "Lippenbalsem set",
+      "description": "Een klein setje balsem voor koude dagen.",
+      "priceCents": 895,
+      "art": "warm",
+      "image": "/cadeaus/sjaal.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie beauty",
+      "recipients": [
+        "vrouw",
+        "tiener"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "verzorging"
+      ],
+      "categories": [
+        "beauty"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 33
+    },
+    {
+      "id": "haarband",
+      "name": "Haarband",
+      "description": "Een zachte band voor tijdens het wassen of sporten.",
+      "priceCents": 995,
+      "art": "warm",
+      "image": "/cadeaus/sjaal.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie beauty",
+      "recipients": [
+        "vrouw",
+        "tiener",
+        "kind"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "verzorging"
+      ],
+      "categories": [
+        "beauty"
+      ],
+      "ageGroups": [
+        "7-12",
+        "13-17",
+        "18+"
+      ],
+      "popularity": 29
+    },
+    {
+      "id": "nagelverzorging-set",
+      "name": "Nagelverzorging set",
+      "description": "Een eenvoudige set voor nagels bijwerken.",
+      "priceCents": 1495,
+      "art": "warm",
+      "image": "/cadeaus/sjaal.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie beauty",
+      "recipients": [
+        "vrouw",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "verzorging"
+      ],
+      "categories": [
+        "beauty"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 41
+    },
+    {
+      "id": "houten-blokken",
+      "name": "Houten blokken",
+      "description": "Gekleurde blokken om te stapelen.",
+      "priceCents": 1795,
+      "art": "play",
+      "image": "/cadeaus/bouwset.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie speelgoed",
+      "recipients": [
+        "kind",
+        "baby"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag",
+        "geboorte"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "speelgoed"
+      ],
+      "ageGroups": [
+        "0-2",
+        "3-6"
+      ],
+      "popularity": 80
+    },
+    {
+      "id": "kralenketting-set",
+      "name": "Kralenketting set",
+      "description": "Kralen om zelf een ketting te rijgen.",
+      "priceCents": 1295,
+      "art": "play",
+      "image": "/cadeaus/bouwset.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie speelgoed",
+      "recipients": [
+        "kind"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "speelgoed"
+      ],
+      "ageGroups": [
+        "3-6",
+        "7-12"
+      ],
+      "popularity": 58
+    },
+    {
+      "id": "bal-voor-binnen",
+      "name": "Bal voor binnen",
+      "description": "Een zachte bal die binnen mag stuiteren.",
+      "priceCents": 1495,
+      "art": "play",
+      "image": "/cadeaus/bouwset.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie speelgoed",
+      "recipients": [
+        "kind"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "speelgoed"
+      ],
+      "ageGroups": [
+        "3-6",
+        "7-12"
+      ],
+      "popularity": 61
+    },
+    {
+      "id": "powerbank",
+      "name": "Powerbank",
+      "description": "Een compacte accu voor onderweg.",
+      "priceCents": 2295,
+      "art": "tech",
+      "image": "/cadeaus/koptelefoon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie tech",
+      "recipients": [
+        "tiener",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "techniek"
+      ],
+      "categories": [
+        "tech"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 74
+    },
+    {
+      "id": "boekenlegger-van-metaal",
+      "name": "Boekenlegger van metaal",
+      "description": "Een stevige legger die niet scheurt.",
+      "priceCents": 795,
+      "art": "book",
+      "image": "/cadeaus/kookboek.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie boeken",
+      "recipients": [
+        "vrouw",
+        "man",
+        "tiener"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "lezen"
+      ],
+      "categories": [
+        "boeken"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 27
+    },
+    {
+      "id": "verhalenbundel",
+      "name": "Verhalenbundel",
+      "description": "Korte verhalen voor een rustige avond.",
+      "priceCents": 1895,
+      "art": "book",
+      "image": "/cadeaus/kookboek.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie boeken",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "lezen"
+      ],
+      "categories": [
+        "boeken"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 49
+    },
+    {
+      "id": "kinderschort",
+      "name": "Kinderschort",
+      "description": "Een schort voor wie meehelpt in de keuken.",
+      "priceCents": 1495,
+      "art": "kitchen",
+      "image": "/cadeaus/theedoos.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie koken",
+      "recipients": [
+        "kind"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "koken"
+      ],
+      "categories": [
+        "koken"
+      ],
+      "ageGroups": [
+        "3-6",
+        "7-12"
+      ],
+      "popularity": 45
+    },
+    {
+      "id": "maatlepels",
+      "name": "Maatlepels",
+      "description": "Een set lepels voor bakken.",
+      "priceCents": 995,
+      "art": "kitchen",
+      "image": "/cadeaus/theedoos.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie koken",
+      "recipients": [
+        "vrouw",
+        "man",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "koken"
+      ],
+      "categories": [
+        "koken"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 34
+    },
+    {
+      "id": "keukenwekker",
+      "name": "Keukenwekker",
+      "description": "Een wekker die je hoort boven de afzuigkap.",
+      "priceCents": 1295,
+      "art": "kitchen",
+      "image": "/cadeaus/theedoos.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie koken",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "koken"
+      ],
+      "categories": [
+        "koken"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 31
+    },
+    {
+      "id": "fitnessband",
+      "name": "Fitnessband",
+      "description": "Een elastische band voor oefeningen thuis.",
+      "priceCents": 1195,
+      "art": "sport",
+      "image": "/cadeaus/waterfles.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie sport",
+      "recipients": [
+        "vrouw",
+        "man",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "sport"
+      ],
+      "categories": [
+        "sport"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 57
+    },
+    {
+      "id": "bidon",
+      "name": "Bidon",
+      "description": "Een lichte fles voor op de fiets.",
+      "priceCents": 1095,
+      "art": "sport",
+      "image": "/cadeaus/waterfles.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie sport",
+      "recipients": [
+        "kind",
+        "tiener",
+        "man",
+        "vrouw"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "sport"
+      ],
+      "categories": [
+        "sport"
+      ],
+      "ageGroups": [
+        "7-12",
+        "13-17",
+        "18+"
+      ],
+      "popularity": 39
+    },
+    {
+      "id": "badjas",
+      "name": "Badjas",
+      "description": "Een warme jas voor na het douchen.",
+      "priceCents": 3495,
+      "art": "warm",
+      "image": "/cadeaus/geurkaars.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wellness",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "wellness"
+      ],
+      "categories": [
+        "wellness"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 66
+    },
+    {
+      "id": "voetenbadzout",
+      "name": "Voetenbadzout",
+      "description": "Zout voor een kom warm water.",
+      "priceCents": 895,
+      "art": "warm",
+      "image": "/cadeaus/geurkaars.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wellness",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "wellness"
+      ],
+      "categories": [
+        "wellness"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 24
+    },
+    {
+      "id": "puzzel-van-vijfhonderd-stukjes",
+      "name": "Puzzel van vijfhonderd stukjes",
+      "description": "Een puzzel voor een regenachtige middag.",
+      "priceCents": 1495,
+      "art": "play",
+      "image": "/cadeaus/bordspel.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie spellen",
+      "recipients": [
+        "tiener",
+        "vrouw",
+        "man",
+        "kind"
+      ],
+      "occasions": [
+        "kerst",
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "spellen"
+      ],
+      "ageGroups": [
+        "7-12",
+        "13-17",
+        "18+"
+      ],
+      "popularity": 68
+    },
+    {
+      "id": "memoryspel",
+      "name": "Memoryspel",
+      "description": "Kaartjes omdraaien, voor klein en groot.",
+      "priceCents": 1295,
+      "art": "play",
+      "image": "/cadeaus/bordspel.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie spellen",
+      "recipients": [
+        "kind",
+        "baby"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "geboorte",
+        "verjaardag"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "spellen"
+      ],
+      "ageGroups": [
+        "0-2",
+        "3-6",
+        "7-12"
+      ],
+      "popularity": 63
+    },
+    {
+      "id": "tafelkleed",
+      "name": "Tafelkleed",
+      "description": "Een kleed voor een etentje thuis.",
+      "priceCents": 2495,
+      "art": "warm",
+      "image": "/cadeaus/glazen-set.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wonen",
+      "recipients": [
+        "koppel",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "bruiloft",
+        "verjaardag"
+      ],
+      "interests": [
+        "creatief"
+      ],
+      "categories": [
+        "wonen"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 37
+    },
+    {
+      "id": "sleutelhaak",
+      "name": "Sleutelhaak",
+      "description": "Een haak voor bij de deur.",
+      "priceCents": 1495,
+      "art": "warm",
+      "image": "/cadeaus/glazen-set.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wonen",
+      "recipients": [
+        "koppel",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "bruiloft",
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "creatief"
+      ],
+      "categories": [
+        "wonen"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 28
+    },
+    {
+      "id": "geurkaarsen-set",
+      "name": "Geurkaarsen set",
+      "description": "Twee kleine kaarsen voor op tafel.",
+      "priceCents": 1695,
+      "art": "warm",
+      "image": "/cadeaus/glazen-set.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wonen",
+      "recipients": [
+        "vrouw",
+        "koppel"
+      ],
+      "occasions": [
+        "kerst",
+        "verjaardag",
+        "bruiloft"
+      ],
+      "interests": [
+        "creatief"
+      ],
+      "categories": [
+        "wonen"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 54
+    },
+    {
+      "id": "stadswandeling",
+      "name": "Stadswandeling",
+      "description": "Een uitgewerkte route om samen te lopen.",
+      "priceCents": 1500,
+      "art": "outdoor",
+      "image": "/cadeaus/dinerbon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie ervaringen",
+      "recipients": [
+        "koppel",
+        "vrouw",
+        "man",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "bruiloft",
+        "anders"
+      ],
+      "interests": [
+        "buiten"
+      ],
+      "categories": [
+        "ervaringen"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 59
+    },
+    {
+      "id": "kookmiddag-voor-twee",
+      "name": "Kookmiddag voor twee",
+      "description": "Een tegoed om samen te koken, zelf te plannen.",
+      "priceCents": 7500,
+      "art": "outdoor",
+      "image": "/cadeaus/dinerbon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie ervaringen",
+      "recipients": [
+        "koppel"
+      ],
+      "occasions": [
+        "bruiloft",
+        "verjaardag"
+      ],
+      "interests": [
+        "buiten"
+      ],
+      "categories": [
+        "ervaringen"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 86
+    },
+    {
+      "id": "museumbezoek",
+      "name": "Museumbezoek",
+      "description": "Een bon voor een middag in een museum.",
+      "priceCents": 3000,
+      "art": "outdoor",
+      "image": "/cadeaus/dinerbon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie ervaringen",
+      "recipients": [
+        "vrouw",
+        "man",
+        "tiener",
+        "koppel"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "buiten"
+      ],
+      "categories": [
+        "ervaringen"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 71
+    },
+    {
+      "id": "scheerset",
+      "name": "Scheerset",
+      "description": "Een eenvoudige set voor wie zich scheert.",
+      "priceCents": 1995,
+      "art": "warm",
+      "image": "/cadeaus/sjaal.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie beauty",
+      "recipients": [
+        "man",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "verzorging"
+      ],
+      "categories": [
+        "beauty"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 35
+    },
+    {
+      "id": "bodylotion",
+      "name": "Bodylotion",
+      "description": "Een fles lotion voor droge huid.",
+      "priceCents": 1295,
+      "art": "warm",
+      "image": "/cadeaus/sjaal.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie beauty",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "verzorging"
+      ],
+      "categories": [
+        "beauty"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 32
+    },
+    {
+      "id": "haarklemmen",
+      "name": "Haarklemmen",
+      "description": "Een doosje stevige klemmen.",
+      "priceCents": 695,
+      "art": "warm",
+      "image": "/cadeaus/sjaal.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie beauty",
+      "recipients": [
+        "vrouw",
+        "tiener",
+        "kind"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "verzorging"
+      ],
+      "categories": [
+        "beauty"
+      ],
+      "ageGroups": [
+        "7-12",
+        "13-17",
+        "18+"
+      ],
+      "popularity": 22
+    },
+    {
+      "id": "knuffeldeken",
+      "name": "Knuffeldeken",
+      "description": "Een kleine deken om mee te slepen.",
+      "priceCents": 1995,
+      "art": "play",
+      "image": "/cadeaus/bouwset.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie speelgoed",
+      "recipients": [
+        "baby",
+        "kind"
+      ],
+      "occasions": [
+        "geboorte",
+        "sinterklaas"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "speelgoed"
+      ],
+      "ageGroups": [
+        "0-2",
+        "3-6"
+      ],
+      "popularity": 84
+    },
+    {
+      "id": "houten-dieren",
+      "name": "Houten dieren",
+      "description": "Een set dieren om mee te spelen.",
+      "priceCents": 1695,
+      "art": "play",
+      "image": "/cadeaus/bouwset.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie speelgoed",
+      "recipients": [
+        "kind",
+        "baby"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag",
+        "geboorte"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "speelgoed"
+      ],
+      "ageGroups": [
+        "0-2",
+        "3-6"
+      ],
+      "popularity": 76
+    },
+    {
+      "id": "springkasteel-bon",
+      "name": "Springkasteel bon",
+      "description": "Een tegoed voor een uurtje springen.",
+      "priceCents": 2500,
+      "art": "play",
+      "image": "/cadeaus/bouwset.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie speelgoed",
+      "recipients": [
+        "kind"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "speelgoed"
+      ],
+      "ageGroups": [
+        "3-6",
+        "7-12"
+      ],
+      "popularity": 69
+    },
+    {
+      "id": "bureaulamp",
+      "name": "Bureaulamp",
+      "description": "Een lamp met een zachte lichtbundel.",
+      "priceCents": 2995,
+      "art": "tech",
+      "image": "/cadeaus/koptelefoon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie tech",
+      "recipients": [
+        "tiener",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "techniek"
+      ],
+      "categories": [
+        "tech"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 62
+    },
+    {
+      "id": "kabelorganizer",
+      "name": "Kabelorganizer",
+      "description": "Een hoes om opladers bij elkaar te houden.",
+      "priceCents": 1295,
+      "art": "tech",
+      "image": "/cadeaus/koptelefoon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie tech",
+      "recipients": [
+        "tiener",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "techniek"
+      ],
+      "categories": [
+        "tech"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 30
+    },
+    {
+      "id": "voorleesboek",
+      "name": "Voorleesboek",
+      "description": "Een boek met korte verhalen voor het slapen.",
+      "priceCents": 1495,
+      "art": "book",
+      "image": "/cadeaus/kookboek.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie boeken",
+      "recipients": [
+        "kind",
+        "baby"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "geboorte",
+        "verjaardag"
+      ],
+      "interests": [
+        "lezen"
+      ],
+      "categories": [
+        "boeken"
+      ],
+      "ageGroups": [
+        "0-2",
+        "3-6",
+        "7-12"
+      ],
+      "popularity": 82
+    },
+    {
+      "id": "receptenkaartenset",
+      "name": "Receptenkaartenset",
+      "description": "Kaarten met een gerecht per kaart.",
+      "priceCents": 1695,
+      "art": "book",
+      "image": "/cadeaus/kookboek.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie boeken",
+      "recipients": [
+        "vrouw",
+        "man",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "lezen"
+      ],
+      "categories": [
+        "boeken"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 47
+    },
+    {
+      "id": "ovenwant",
+      "name": "Ovenwant",
+      "description": "Een want die tegen een hete schaal kan.",
+      "priceCents": 1295,
+      "art": "kitchen",
+      "image": "/cadeaus/theedoos.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie koken",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "koken"
+      ],
+      "categories": [
+        "koken"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 26
+    },
+    {
+      "id": "voorraadpotten",
+      "name": "Voorraadpotten",
+      "description": "Twee potten voor pasta of koek.",
+      "priceCents": 1895,
+      "art": "kitchen",
+      "image": "/cadeaus/theedoos.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie koken",
+      "recipients": [
+        "koppel",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "bruiloft",
+        "verjaardag"
+      ],
+      "interests": [
+        "koken"
+      ],
+      "categories": [
+        "koken"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 43
+    },
+    {
+      "id": "fietsbel",
+      "name": "Fietsbel",
+      "description": "Een bel die je hoort in het verkeer.",
+      "priceCents": 995,
+      "art": "sport",
+      "image": "/cadeaus/waterfles.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie sport",
+      "recipients": [
+        "kind",
+        "tiener",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "sport"
+      ],
+      "categories": [
+        "sport"
+      ],
+      "ageGroups": [
+        "7-12",
+        "13-17",
+        "18+"
+      ],
+      "popularity": 25
+    },
+    {
+      "id": "zweetband",
+      "name": "Zweetband",
+      "description": "Een band voor het voorhoofd bij het sporten.",
+      "priceCents": 795,
+      "art": "sport",
+      "image": "/cadeaus/waterfles.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie sport",
+      "recipients": [
+        "tiener",
+        "man",
+        "vrouw"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "sport"
+      ],
+      "categories": [
+        "sport"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 18
+    },
+    {
+      "id": "warmtekussen",
+      "name": "Warmtekussen",
+      "description": "Een kussen voor een stijve schouder.",
+      "priceCents": 2495,
+      "art": "warm",
+      "image": "/cadeaus/geurkaars.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wellness",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "wellness"
+      ],
+      "categories": [
+        "wellness"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 67
+    },
+    {
+      "id": "theedoos-2",
+      "name": "Theedoos",
+      "description": "Een blik met vakjes voor verschillende thee.",
+      "priceCents": 1995,
+      "art": "warm",
+      "image": "/cadeaus/geurkaars.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wellness",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "wellness"
+      ],
+      "categories": [
+        "wellness"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 53
+    },
+    {
+      "id": "cooperatief-spel",
+      "name": "Coöperatief spel",
+      "description": "Een spel waarin je samen wint.",
+      "priceCents": 2295,
+      "art": "play",
+      "image": "/cadeaus/bordspel.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie spellen",
+      "recipients": [
+        "kind",
+        "tiener",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "kerst",
+        "verjaardag"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "spellen"
+      ],
+      "ageGroups": [
+        "7-12",
+        "13-17",
+        "18+"
+      ],
+      "popularity": 79
+    },
+    {
+      "id": "reisspel",
+      "name": "Reisspel",
+      "description": "Een spel met een magneetbord voor in de trein.",
+      "priceCents": 1795,
+      "art": "play",
+      "image": "/cadeaus/bordspel.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie spellen",
+      "recipients": [
+        "kind",
+        "tiener"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "spellen"
+      ],
+      "ageGroups": [
+        "7-12",
+        "13-17"
+      ],
+      "popularity": 50
+    },
+    {
+      "id": "wandplank",
+      "name": "Wandplank",
+      "description": "Een korte plank voor boeken of een plant.",
+      "priceCents": 2295,
+      "art": "warm",
+      "image": "/cadeaus/glazen-set.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wonen",
+      "recipients": [
+        "tiener",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "creatief"
+      ],
+      "categories": [
+        "wonen"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 41
+    },
+    {
+      "id": "deurmat",
+      "name": "Deurmat",
+      "description": "Een mat voor modderige schoenen.",
+      "priceCents": 1995,
+      "art": "warm",
+      "image": "/cadeaus/glazen-set.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wonen",
+      "recipients": [
+        "koppel",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "bruiloft",
+        "verjaardag"
+      ],
+      "interests": [
+        "creatief"
+      ],
+      "categories": [
+        "wonen"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 23
+    },
+    {
+      "id": "bloemenabonnement-maand",
+      "name": "Bloemenabonnement maand",
+      "description": "Een maand lang een bos, zelf te regelen.",
+      "priceCents": 3500,
+      "art": "outdoor",
+      "image": "/cadeaus/dinerbon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie ervaringen",
+      "recipients": [
+        "vrouw",
+        "koppel"
+      ],
+      "occasions": [
+        "verjaardag",
+        "bruiloft"
+      ],
+      "interests": [
+        "buiten"
+      ],
+      "categories": [
+        "ervaringen"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 73
+    },
+    {
+      "id": "proeverij-tegoed",
+      "name": "Proeverij tegoed",
+      "description": "Een tegoed voor een proeverij, zelf te kiezen.",
+      "priceCents": 4500,
+      "art": "outdoor",
+      "image": "/cadeaus/dinerbon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie ervaringen",
+      "recipients": [
+        "koppel",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "bruiloft",
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "buiten"
+      ],
+      "categories": [
+        "ervaringen"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 81
+    },
+    {
+      "id": "parfumstaaltjes-set",
+      "name": "Parfumstaaltjes set",
+      "description": "Een paar kleine geuren om te proberen.",
+      "priceCents": 1895,
+      "art": "warm",
+      "image": "/cadeaus/sjaal.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie beauty",
+      "recipients": [
+        "vrouw",
+        "man",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "verzorging"
+      ],
+      "categories": [
+        "beauty"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 56
+    },
+    {
+      "id": "make-up-tas",
+      "name": "Make-up tas",
+      "description": "Een tasje voor kwasten en crèmes.",
+      "priceCents": 1495,
+      "art": "warm",
+      "image": "/cadeaus/sjaal.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie beauty",
+      "recipients": [
+        "vrouw",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "verzorging"
+      ],
+      "categories": [
+        "beauty"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 39
+    },
+    {
+      "id": "badspeeltjes",
+      "name": "Badspeeltjes",
+      "description": "Een set bekers voor in bad.",
+      "priceCents": 1295,
+      "art": "play",
+      "image": "/cadeaus/bouwset.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie speelgoed",
+      "recipients": [
+        "baby",
+        "kind"
+      ],
+      "occasions": [
+        "geboorte",
+        "sinterklaas",
+        "babyshower"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "speelgoed"
+      ],
+      "ageGroups": [
+        "0-2",
+        "3-6"
+      ],
+      "popularity": 75
+    },
+    {
+      "id": "verkleedset",
+      "name": "Verkleedset",
+      "description": "Een cape en een masker om te verkleden.",
+      "priceCents": 1695,
+      "art": "play",
+      "image": "/cadeaus/bouwset.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie speelgoed",
+      "recipients": [
+        "kind"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "speelgoed"
+      ],
+      "ageGroups": [
+        "3-6",
+        "7-12"
+      ],
+      "popularity": 65
+    },
+    {
+      "id": "oplader-voor-in-de-auto",
+      "name": "Oplader voor in de auto",
+      "description": "Een kleine lader voor onderweg.",
+      "priceCents": 1495,
+      "art": "tech",
+      "image": "/cadeaus/koptelefoon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie tech",
+      "recipients": [
+        "man",
+        "vrouw",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "techniek"
+      ],
+      "categories": [
+        "tech"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 28
+    },
+    {
+      "id": "e-reader-hoes",
+      "name": "E-reader hoes",
+      "description": "Een hoes die een lezer beschermt in een tas.",
+      "priceCents": 1995,
+      "art": "tech",
+      "image": "/cadeaus/koptelefoon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie tech",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "techniek"
+      ],
+      "categories": [
+        "tech"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 46
+    },
+    {
+      "id": "poeziebundel",
+      "name": "Poëziebundel",
+      "description": "Een dunne bundel om uit voor te lezen.",
+      "priceCents": 1495,
+      "art": "book",
+      "image": "/cadeaus/kookboek.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie boeken",
+      "recipients": [
+        "vrouw",
+        "man",
+        "koppel"
+      ],
+      "occasions": [
+        "verjaardag",
+        "bruiloft"
+      ],
+      "interests": [
+        "lezen"
+      ],
+      "categories": [
+        "boeken"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 34
+    },
+    {
+      "id": "kleurboek-voor-volwassenen",
+      "name": "Kleurboek voor volwassenen",
+      "description": "Fijne tekeningen om in te kleuren.",
+      "priceCents": 1295,
+      "art": "book",
+      "image": "/cadeaus/kookboek.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie boeken",
+      "recipients": [
+        "vrouw",
+        "man",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "lezen"
+      ],
+      "categories": [
+        "boeken"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 44
+    },
+    {
+      "id": "pasta-vork",
+      "name": "Pasta vork",
+      "description": "Een vork die spaghetti makkelijker maakt.",
+      "priceCents": 895,
+      "art": "kitchen",
+      "image": "/cadeaus/theedoos.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie koken",
+      "recipients": [
+        "kind",
+        "tiener",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "koken"
+      ],
+      "categories": [
+        "koken"
+      ],
+      "ageGroups": [
+        "7-12",
+        "13-17",
+        "18+"
+      ],
+      "popularity": 21
+    },
+    {
+      "id": "saladebestek",
+      "name": "Saladebestek",
+      "description": "Een lepel en vork voor een grote schaal.",
+      "priceCents": 1495,
+      "art": "kitchen",
+      "image": "/cadeaus/theedoos.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie koken",
+      "recipients": [
+        "koppel",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "bruiloft",
+        "verjaardag"
+      ],
+      "interests": [
+        "koken"
+      ],
+      "categories": [
+        "koken"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 36
+    },
+    {
+      "id": "sportshirt",
+      "name": "Sportshirt",
+      "description": "Een shirt dat goed ademt bij bewegen.",
+      "priceCents": 1995,
+      "art": "sport",
+      "image": "/cadeaus/waterfles.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie sport",
+      "recipients": [
+        "tiener",
+        "man",
+        "vrouw"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "sport"
+      ],
+      "categories": [
+        "sport"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 40
+    },
+    {
+      "id": "enkelgewichten",
+      "name": "Enkelgewichten",
+      "description": "Lichte gewichten om om de enkels te doen.",
+      "priceCents": 1695,
+      "art": "sport",
+      "image": "/cadeaus/waterfles.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie sport",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "sport"
+      ],
+      "categories": [
+        "sport"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 33
+    },
+    {
+      "id": "oogmasker-met-gel",
+      "name": "Oogmasker met gel",
+      "description": "Een masker dat je koel op de ogen legt.",
+      "priceCents": 1095,
+      "art": "warm",
+      "image": "/cadeaus/geurkaars.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wellness",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "wellness"
+      ],
+      "categories": [
+        "wellness"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 27
+    },
+    {
+      "id": "massagebal",
+      "name": "Massagebal",
+      "description": "Een harde bal voor een stijve rug.",
+      "priceCents": 1295,
+      "art": "warm",
+      "image": "/cadeaus/geurkaars.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wellness",
+      "recipients": [
+        "vrouw",
+        "man",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "wellness"
+      ],
+      "categories": [
+        "wellness"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 31
+    },
+    {
+      "id": "trivia-spel",
+      "name": "Trivia spel",
+      "description": "Vragen over van alles, voor aan tafel.",
+      "priceCents": 1995,
+      "art": "play",
+      "image": "/cadeaus/bordspel.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie spellen",
+      "recipients": [
+        "tiener",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "kerst",
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "spellen"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 70
+    },
+    {
+      "id": "stapelspel",
+      "name": "Stapelspel",
+      "description": "Blokken stapelen tot de toren omvalt.",
+      "priceCents": 1495,
+      "art": "play",
+      "image": "/cadeaus/bordspel.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie spellen",
+      "recipients": [
+        "kind",
+        "tiener",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "spellen"
+      ],
+      "ageGroups": [
+        "7-12",
+        "13-17",
+        "18+"
+      ],
+      "popularity": 66
+    },
+    {
+      "id": "plant-in-pot",
+      "name": "Plant in pot",
+      "description": "Een kleine kamerplant die weinig water vraagt.",
+      "priceCents": 1495,
+      "art": "warm",
+      "image": "/cadeaus/glazen-set.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wonen",
+      "recipients": [
+        "vrouw",
+        "man",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "creatief"
+      ],
+      "categories": [
+        "wonen"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 58
+    },
+    {
+      "id": "kandelaar",
+      "name": "Kandelaar",
+      "description": "Een houder voor een dinerkaars.",
+      "priceCents": 1695,
+      "art": "warm",
+      "image": "/cadeaus/glazen-set.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wonen",
+      "recipients": [
+        "koppel",
+        "vrouw"
+      ],
+      "occasions": [
+        "bruiloft",
+        "kerst",
+        "verjaardag"
+      ],
+      "interests": [
+        "creatief"
+      ],
+      "categories": [
+        "wonen"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 45
+    },
+    {
+      "id": "concert-tegoed",
+      "name": "Concert tegoed",
+      "description": "Een tegoed voor een optreden, zelf te kiezen.",
+      "priceCents": 4000,
+      "art": "outdoor",
+      "image": "/cadeaus/dinerbon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie ervaringen",
+      "recipients": [
+        "tiener",
+        "vrouw",
+        "man",
+        "koppel"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "buiten"
+      ],
+      "categories": [
+        "ervaringen"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 78
+    },
+    {
+      "id": "sauna-dagdeel",
+      "name": "Sauna dagdeel",
+      "description": "Een bon voor een middag sauna.",
+      "priceCents": 4500,
+      "art": "outdoor",
+      "image": "/cadeaus/dinerbon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie ervaringen",
+      "recipients": [
+        "vrouw",
+        "man",
+        "koppel"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "buiten"
+      ],
+      "categories": [
+        "ervaringen"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 72
+    },
+    {
+      "id": "handcreme",
+      "name": "Handcrème",
+      "description": "Een tube crème voor droge handen.",
+      "priceCents": 895,
+      "art": "warm",
+      "image": "/cadeaus/sjaal.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie beauty",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "verzorging"
+      ],
+      "categories": [
+        "beauty"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 20
+    },
+    {
+      "id": "scheerkwast",
+      "name": "Scheerkwast",
+      "description": "Een zachte kwast voor scheerschuim.",
+      "priceCents": 1495,
+      "art": "warm",
+      "image": "/cadeaus/sjaal.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie beauty",
+      "recipients": [
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "verzorging"
+      ],
+      "categories": [
+        "beauty"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 19
+    },
+    {
+      "id": "poppenhuis-meubels",
+      "name": "Poppenhuis meubels",
+      "description": "Een set kleine meubels voor een poppenhuis.",
+      "priceCents": 1895,
+      "art": "play",
+      "image": "/cadeaus/bouwset.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie speelgoed",
+      "recipients": [
+        "kind"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "speelgoed"
+      ],
+      "ageGroups": [
+        "3-6",
+        "7-12"
+      ],
+      "popularity": 57
+    },
+    {
+      "id": "buitenkrijt",
+      "name": "Buitenkrijt",
+      "description": "Dikke krijtjes voor op de stoep.",
+      "priceCents": 695,
+      "art": "play",
+      "image": "/cadeaus/bouwset.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie speelgoed",
+      "recipients": [
+        "kind"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "speelgoed"
+      ],
+      "ageGroups": [
+        "3-6",
+        "7-12"
+      ],
+      "popularity": 48
+    },
+    {
+      "id": "nachtlamp-ster",
+      "name": "Nachtlamp ster",
+      "description": "Een lamp die sterren op het plafond zet.",
+      "priceCents": 1995,
+      "art": "play",
+      "image": "/cadeaus/bouwset.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie speelgoed",
+      "recipients": [
+        "kind",
+        "baby"
+      ],
+      "occasions": [
+        "geboorte",
+        "sinterklaas"
+      ],
+      "interests": [
+        "spelen"
+      ],
+      "categories": [
+        "speelgoed"
+      ],
+      "ageGroups": [
+        "0-2",
+        "3-6"
+      ],
+      "popularity": 73
+    },
+    {
+      "id": "toetsenbord-schoonmaakset",
+      "name": "Toetsenbord schoonmaakset",
+      "description": "Borstels voor tussen de toetsen.",
+      "priceCents": 995,
+      "art": "tech",
+      "image": "/cadeaus/koptelefoon.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie tech",
+      "recipients": [
+        "tiener",
+        "man",
+        "vrouw"
+      ],
+      "occasions": [
+        "verjaardag",
+        "anders"
+      ],
+      "interests": [
+        "techniek"
+      ],
+      "categories": [
+        "tech"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 17
+    },
+    {
+      "id": "luisterboek-tegoed",
+      "name": "Luisterboek tegoed",
+      "description": "Een tegoed voor een luisterboek.",
+      "priceCents": 1500,
+      "art": "book",
+      "image": "/cadeaus/kookboek.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie boeken",
+      "recipients": [
+        "vrouw",
+        "man",
+        "tiener"
+      ],
+      "occasions": [
+        "verjaardag",
+        "kerst"
+      ],
+      "interests": [
+        "lezen"
+      ],
+      "categories": [
+        "boeken"
+      ],
+      "ageGroups": [
+        "13-17",
+        "18+"
+      ],
+      "popularity": 64
+    },
+    {
+      "id": "kinderkookboek",
+      "name": "Kinderkookboek",
+      "description": "Recepten die een kind met hulp kan maken.",
+      "priceCents": 1695,
+      "art": "book",
+      "image": "/cadeaus/kookboek.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie boeken",
+      "recipients": [
+        "kind"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "lezen"
+      ],
+      "categories": [
+        "boeken"
+      ],
+      "ageGroups": [
+        "7-12"
+      ],
+      "popularity": 55
+    },
+    {
+      "id": "pannenlikker-set",
+      "name": "Pannenlikker set",
+      "description": "Likker, spatel en lepel in één set.",
+      "priceCents": 1295,
+      "art": "kitchen",
+      "image": "/cadeaus/theedoos.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie koken",
+      "recipients": [
+        "kind",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "koken"
+      ],
+      "categories": [
+        "koken"
+      ],
+      "ageGroups": [
+        "7-12",
+        "18+"
+      ],
+      "popularity": 29
+    },
+    {
+      "id": "thermoskan",
+      "name": "Thermoskan",
+      "description": "Een kan die koffie of thee warm houdt.",
+      "priceCents": 2495,
+      "art": "kitchen",
+      "image": "/cadeaus/theedoos.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie koken",
+      "recipients": [
+        "vrouw",
+        "man",
+        "koppel"
+      ],
+      "occasions": [
+        "verjaardag",
+        "bruiloft"
+      ],
+      "interests": [
+        "koken"
+      ],
+      "categories": [
+        "koken"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 60
+    },
+    {
+      "id": "skipping-elastiek",
+      "name": "Skipping elastiek",
+      "description": "Een elastiek voor op het schoolplein.",
+      "priceCents": 695,
+      "art": "sport",
+      "image": "/cadeaus/waterfles.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie sport",
+      "recipients": [
+        "kind"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "verjaardag"
+      ],
+      "interests": [
+        "sport"
+      ],
+      "categories": [
+        "sport"
+      ],
+      "ageGroups": [
+        "7-12"
+      ],
+      "popularity": 22
+    },
+    {
+      "id": "zwembril",
+      "name": "Zwembril",
+      "description": "Een bril die niet snel beslaat.",
+      "priceCents": 1495,
+      "art": "sport",
+      "image": "/cadeaus/waterfles.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie sport",
+      "recipients": [
+        "kind",
+        "tiener",
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "verjaardag",
+        "sinterklaas"
+      ],
+      "interests": [
+        "sport"
+      ],
+      "categories": [
+        "sport"
+      ],
+      "ageGroups": [
+        "7-12",
+        "13-17",
+        "18+"
+      ],
+      "popularity": 43
+    },
+    {
+      "id": "slaapsokken",
+      "name": "Slaapsokken",
+      "description": "Dikke sokken voor koude voeten in bed.",
+      "priceCents": 1295,
+      "art": "warm",
+      "image": "/cadeaus/geurkaars.svg",
+      "imageAlt": "Sfeerillustratie voor cadeaus in de categorie wellness",
+      "recipients": [
+        "vrouw",
+        "man"
+      ],
+      "occasions": [
+        "sinterklaas",
+        "kerst",
+        "verjaardag"
+      ],
+      "interests": [
+        "wellness"
+      ],
+      "categories": [
+        "wellness"
+      ],
+      "ageGroups": [
+        "18+"
+      ],
+      "popularity": 50
     }
   ]
 }

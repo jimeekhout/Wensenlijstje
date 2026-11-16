@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { OCCASION_IDS } from "@/lib/occasions";
 import { checkPublicUrl } from "@/lib/urls";
-import { AGE_GROUPS, GIFT_ARTS, INTERESTS, RECIPIENTS } from "@/data/taxonomy";
+import { AGE_GROUPS, CATEGORIES, GIFT_ARTS, INTERESTS, RECIPIENTS } from "@/data/taxonomy";
 
 const recipientIds = RECIPIENTS.map((item) => item.id) as [
   (typeof RECIPIENTS)[number]["id"],
@@ -14,6 +14,10 @@ const interestIds = INTERESTS.map((item) => item.id) as [
 const ageIds = AGE_GROUPS.map((item) => item.id) as [
   (typeof AGE_GROUPS)[number]["id"],
   ...(typeof AGE_GROUPS)[number]["id"][],
+];
+const categoryIds = CATEGORIES.map((item) => item.id) as [
+  (typeof CATEGORIES)[number]["id"],
+  ...(typeof CATEGORIES)[number]["id"][],
 ];
 
 export const giftIdeaSchema = z.object({
@@ -29,7 +33,9 @@ export const giftIdeaSchema = z.object({
   recipients: z.array(z.enum(recipientIds)).min(1),
   occasions: z.array(z.enum(OCCASION_IDS)).min(1),
   interests: z.array(z.enum(interestIds)).min(1),
+  categories: z.array(z.enum(categoryIds)).min(1),
   ageGroups: z.array(z.enum(ageIds)).min(1),
+  popularity: z.number().int().min(0).max(100).default(0),
 });
 
 export const giftCatalogSchema = z

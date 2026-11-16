@@ -27,3 +27,19 @@ test("combines recipient, occasion, budget and any matching interest", () => {
   });
   assert.equal(none.length, 0);
 });
+
+test("search matches a word in the name and sorts by price", () => {
+  const named = [
+    { name: "Wollen sokken", description: "Warm", recipients: ["man"], occasions: ["kerst"], interests: ["mode"], categories: ["wonen"], priceCents: 1200, popularity: 10 },
+    { name: "Houten trein", description: "Spelen", recipients: ["kind"], occasions: ["sinterklaas"], interests: ["spelen"], categories: ["speelgoed"], priceCents: 4900, popularity: 80 },
+  ];
+  const found = filterGiftIdeas(named, {
+    q: "sokken",
+    recipient: null,
+    occasion: null,
+    ageGroup: null,
+    budgetId: "all",
+    interests: [],
+  });
+  assert.deepEqual(found.map((idea) => idea.name), ["Wollen sokken"]);
+});
