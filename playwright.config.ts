@@ -1,6 +1,7 @@
 import { defineConfig, devices } from "@playwright/test";
 
-process.env.DATABASE_URL ??= "file:./dev.db";
+process.env.DATABASE_URL ??= "postgresql://wensenlijstje:wensenlijstje@127.0.0.1:5432/wensenlijstje";
+process.env.DIRECT_URL ??= process.env.DATABASE_URL;
 
 export default defineConfig({
   testDir: "e2e",

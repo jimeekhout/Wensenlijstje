@@ -5,25 +5,26 @@ A Dutch wish-list app. Someone makes a list for a birthday, Sinterklaas, Christm
 ## Stack
 
 - **Next.js (App Router) + TypeScript.** Server components render the owner page and the shared page separately, so reservation data is never sent to the owner.
-- **Prisma + SQLite.** Local development needs no extra database. The schema is small and portable.
-- **Email and password.** A bcrypt hash and an httpOnly session cookie. No external auth service is required to run it.
+- **Prisma + Postgres.** The same database works locally (Docker) and on Vercel (Neon).
+- **Email and password.** Passwords are bcrypt hashes. Session tokens are random, stored only as an HMAC with `AUTH_SECRET`, and sent in an httpOnly cookie.
 - **Tailwind CSS.** Mobile-first layout, with a warm paper look and a colour for each occasion.
-
-SQLite is a file on disk. Vercel’s serverless filesystem does not keep that file, so production should use Postgres. See [Deploying on Vercel](#deploying-on-vercel).
 
 ## Run locally
 
-Node.js 20 or newer.
+Node.js 20 or newer, and Docker.
 
 ```bash
-npm install
+docker compose up -d
 cp .env.example .env
+npm install
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000). Create an account, make a list, add a gift, and open the share link in a private window.
 
-`npm install` generates the Prisma client. `npm run dev` applies the SQLite migration and starts Next.js.
+`npm install` generates the Prisma client. `npm run dev` applies migrations and starts Next.js. The local database user, password and database name are all `wensenlijstje`, on port 5432.
+
+If you already have a Neon database, skip Docker and put that branch’s pooled URL in `DATABASE_URL` and its direct URL in `DIRECT_URL`.
 
 ### Useful commands
 
@@ -31,7 +32,8 @@ Open [http://localhost:3000](http://localhost:3000). Create an account, make a l
 npm test        # unit tests (parser, prices, claim privacy, gift filters)
 npm run lint
 npm run typecheck
-npm run e2e     # browser flow; downloads Playwright’s Chromium on first run
+npm run db:up   # start local Postgres
+npm run e2e     # browser flow; needs Postgres running
 ```
 
 ## What the app does
@@ -65,24 +67,28 @@ Leave both empty in development. Other shops are unchanged. Set the variables in
 
 ## Deploying on Vercel
 
-1. Create a Postgres database (Neon, Supabase or Vercel Postgres) and copy its connection string.
-2. In `prisma/schema.prisma`, change the datasource provider from `sqlite` to `postgresql`.
-3. The committed migration is SQLite SQL. Create a fresh Postgres migration against that database:
+The build script already runs `prisma generate`, `prisma migrate deploy` and `next build`. Leave Vercel’s build command as the default (`npm run build`). Environment variables must be available at build time, not marked runtime-only, because migrations run during the build.
 
-   ```bash
-   rm -rf prisma/migrations
-   npx prisma migrate dev --name init
-   ```
+1. In Vercel, choose **Add New → Project** and import the GitHub repository. Accept the Next.js preset.
+2. Open the project’s **Storage** or **Marketplace** tab and add **Neon Postgres**. Create a database and connect it to this project. Neon adds `DATABASE_URL` (pooled) and `DATABASE_URL_UNPOOLED` (direct).
+3. In **Settings → Environment Variables**, set these for Production (and Preview, if preview deployments should work):
 
-   Commit the new `prisma/migrations` folder.
-4. In the Vercel project, set `DATABASE_URL` to the Postgres connection string. Optionally set `APP_URL` (for example `https://wensenlijstje.vercel.app`) and the affiliate variables above.
-5. Use this build command:
+   | Variable | Value |
+   | --- | --- |
+   | `DATABASE_URL` | The pooled Neon URL. If `pgbouncer=true` is missing, append `&pgbouncer=true`. |
+   | `DIRECT_URL` | The same value as `DATABASE_URL_UNPOOLED` (no `-pooler` host). Migrations use this. |
+   | `AUTH_SECRET` | Output of `openssl rand -base64 32`. At least 32 characters. |
+   | `APP_URL` | Public origin, no trailing slash. Start with `https://<project>.vercel.app`, then switch to `https://wensenlijstje.nl` after the domain is connected. |
 
-   ```bash
-   prisma generate && prisma migrate deploy && next build
-   ```
+4. Deploy. `prisma migrate deploy` creates the tables on Neon.
 
-Sessions live in the database, so more than one serverless instance can share them. Cookies are marked `Secure` in production.
+### Custom domain
+
+1. In the Vercel project, open **Settings → Domains** and add `wensenlijstje.nl` and `www.wensenlijstje.nl`.
+2. At the registrar, add the DNS records Vercel shows. They are usually an **A** record for the apex (`76.76.21.21`) and a **CNAME** for `www` (`cname.vercel-dns.com`). Use the values on the Domains screen if they differ.
+3. Wait until Vercel marks the domain valid, set `APP_URL` to `https://wensenlijstje.nl`, and redeploy so share links use that host.
+
+Sessions live in Postgres, so more than one serverless instance can share them. Cookies are marked `Secure` in production. Share links always use `APP_URL` in production, not the incoming host header.
 
 ## Suggested next steps
 

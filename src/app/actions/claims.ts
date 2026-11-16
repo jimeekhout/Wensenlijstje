@@ -8,7 +8,7 @@ import type { ActionState } from "@/lib/action-state";
 import { claimCookieName, getCurrentUser, isClaimCookieId } from "@/lib/auth";
 import { prisma } from "@/lib/db";
 import { cleanPersonName } from "@/lib/format";
-import { secretMatches, sha256 } from "@/lib/hash";
+import { hashSecret, secretMatches } from "@/lib/hash";
 
 async function findItem(itemId: string) {
   if (!isClaimCookieId(itemId)) return null;
@@ -36,7 +36,7 @@ export async function claimItem(_prev: ActionState, formData: FormData): Promise
   const secret = randomBytes(24).toString("base64url");
   try {
     await prisma.claim.create({
-      data: { itemId: item.id, claimerName: name, secretHash: sha256(secret) },
+      data: { itemId: item.id, claimerName: name, secretHash: hashSecret(secret) },
     });
   } catch (error) {
     if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2002") {

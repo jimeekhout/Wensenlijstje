@@ -1,10 +1,10 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { sha256 } from "./hash";
+import { hashSecret } from "./hash";
 import { buildViewerItems } from "./viewer-items";
 
 const items = [{ id: "trein" }, { id: "sloffen" }];
-const claims = [{ itemId: "sloffen", claimerName: "Oma Ineke", secretHash: sha256("geheim") }];
+const claims = [{ itemId: "sloffen", claimerName: "Oma Ineke", secretHash: hashSecret("geheim") }];
 
 test("hides every claim from the owner, including the secret", () => {
   const visible = buildViewerItems(items, claims, {

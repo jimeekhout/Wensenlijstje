@@ -1,7 +1,9 @@
-import { createHash, timingSafeEqual } from "node:crypto";
+import { createHmac, timingSafeEqual } from "node:crypto";
+import { authSecret } from "@/lib/env";
 
-export function sha256(value: string) {
-  return createHash("sha256").update(value).digest("hex");
+/** HMAC of a session token or claim secret. The raw value stays in an httpOnly cookie. */
+export function hashSecret(value: string) {
+  return createHmac("sha256", authSecret()).update(value).digest("hex");
 }
 
 export function hashesEqual(left: string, right: string) {
@@ -12,5 +14,5 @@ export function hashesEqual(left: string, right: string) {
 }
 
 export function secretMatches(secret: string, secretHash: string) {
-  return hashesEqual(sha256(secret), secretHash);
+  return hashesEqual(hashSecret(secret), secretHash);
 }

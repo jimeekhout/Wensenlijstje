@@ -1,7 +1,8 @@
 import { headers } from "next/headers";
+import { configuredAppUrl } from "@/lib/env";
 
 export async function requestOrigin() {
-  const configured = process.env.APP_URL?.trim().replace(/\/$/, "");
+  const configured = configuredAppUrl();
   if (configured) return configured;
 
   const headerList = await headers();
